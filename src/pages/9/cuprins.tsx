@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import BioLearnLogo from "~/components/icons/logo/BioLearnLogo";
 function Cuprins (){
     const router = useRouter()
     return (
@@ -22,7 +23,6 @@ function Cuprins (){
                 <p className="container1 text-black"><button onClick={()=>void router.push('/')}>12. Genetica umană</button></p> 
                 <p className="container1 text-black"><button onClick={()=>void router.push('/')}>13. Diversitatea lumii vii</button></p> 
             </div>
-           
         </>
     )
 }

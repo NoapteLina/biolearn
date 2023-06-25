@@ -14,7 +14,7 @@ function Cuprins (){
                 <p className="container1 text-black"><button onClick={()=>void router.push('/')}>7. Funcțiile de relație</button></p> 
                 <p className="container1 text-black"><button onClick={()=>void router.push('/')}>8. Sistemul nervos la mamifere</button></p> 
                 <p className="container1 text-black"><button onClick={()=>void router.push('/')}>9. Reproducerea la plante</button></p> 
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>10. Reprodicerea la om</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>10. Reproducerea la om</button></p> 
             </div>
         </>
     )
