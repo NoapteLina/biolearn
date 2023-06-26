@@ -67,6 +67,7 @@ export default function Nervos() {
                 - arii motorii care comandă mișcările voluntare <br/>
                 - arii de asociație, care la om coordonează procese psihice <br/>
                 <span className="font-extrabold">La interior:</span> nucleii bazali, cu rol în reglarea poziției și a mișcărilor involuntare <br/>
+                Sistemul nervos reprezintă „centrul de comandă” al organismului, el recepționează, transmite și integrează informații din mediul intern sau extern pe baza cărora elaborează răspunsuri adecvate. <br/>
             </div>
         </div>
         </>

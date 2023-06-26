@@ -16,6 +16,12 @@ export default function Lumea() {
                 <span className="font-extrabold">Clasificare:</span> <br/> 
                 - ribovirusuri (au ARN), de exemplu gripal: HIV, ebola, turbare, poliomielita <br/> 
                 - dezoxiribovirusuri (au ADN), de exemplu adenovirusurile, îmbolnăvesc căile respiratorii la om; Papiloma (formează negii genitali și determină cancerul de col uterin) <br/>
+                <span className="font-extrabold">Multiplicare</span> <br/>
+                Doar dintr-o celulă gazdă rezultă liza celulei. <br/>
+                Virionul întreg pătrunde în celulă, și își părăsește capsida (rămâne în afara celulei gazdă) rezultă virus vegetativ. <br/>
+                Virusul vegetativ se integrează în genomul celulei gazdă rezultă provisus. <br/>
+                Se multiplică odată cu materialul genetic al celulei gazdă, genomurile nou formate și capsidele nou formate se asamblează rezultă noi virioni care vor părăsi celula gazdă distrugând-o, urmând să invadeze alte celule, astfel se răspândește infecția. <br/>
+                Virusurile provoacă boli numite  viroze la plante, aniamale, om (gripă, SIDA, hepatită, variolă, rubeolă, oreion etc.).
 
                 REGNUL MONERA <br/>
                 - Cuprinde bacteriile, care sunt microscopice (microorganisme) și au organizare celulară de tip procariot. <br/> 
@@ -54,10 +60,10 @@ export default function Lumea() {
                 REGNUL PROTISTA <br/>
                 - Constituie un grup heterogen, care populează, în special, mediul acvatic. <br/>
                 - Sunt organisme eucariote, unicelulare sau pluricelulare, solitare sau coloniale.<br/>
-                - Au nutriție autotr <br/>ofă sau heterotrofă (saprofită sau parazită). <br/>
-                - Locomoția se realizează c <br/>u ajutorul flagelilor, pseudopodelor, cililor.
-                - Înmulțirea es <br/>te asexută și sexuată. <br/>
-                <span className="font-extrabold"><span className="underline">Clasificare</span></span><br/>
+                - Au nutriție autotofă sau heterotrofă (saprofită sau parazită). <br/>
+                - Locomoția se realizează cu ajutorul flagelilor, pseudopodelor, cililor. <br/>
+                - Înmulțirea este asexută și sexuată. <br/>
+                <span className="underline">Clasificare</span><br/>
                 Criteriul îl constituie modul de nutriție. Astfel sunt: <br/>
                 - protiste autotrofe asemănătoare plantelo <br/>r (algele și euglenele)<br/> <br/>
                 - protiste heterotrofe asemănătoare animalelor (sarcodine,  <br/>zoomastigine, ciliofore și sporozoare) <br/>

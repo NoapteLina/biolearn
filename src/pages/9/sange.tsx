@@ -5,6 +5,16 @@ export default function Sange() {
         <div className="" >
             <h1 className=" text-center text-3xl">GRUPE DE SÂNGE. DETERMINISMUL CROMOZOMILOR SEXELOR. INFLUENȚA MEDIULUI ASUPRA EREDITĂȚII</h1>
             <div className="mt-4 ml-1">
+                GRUPE DE SÂNGE. IMUNITATEA <br/>
+                Există 4 grupe de sânge, determinate de prezența sau absența antigenilor A și B de pe suprafața hematiilor. <br/>
+                În plasmă există anitcorpi pentru aceste antigene, anticorpi anti A și anticorpi anti B. <br/>
+                Anticorpii nu trebuie să intre în contacr cu antigena, pentru că produc distrugerea hematiei (pot produce moartea). De aceea, este foarte important să cunoaștem grupa de sânge pentru o eventuală transfuzie. <br/>
+           
+                Imunitatea reprezintă capacitatea organismului de a recunoaște și neutraliza (distrage) agenți patogeni, celule străine corpului sau celule proprii dar modificate. Acestea conțin pe suprafața lor antigene care determină leucocitele să sintetizeze anticorpi specifici. <br/>
+                Leucocitele au memorie, ele vor sintetiza același tip de anticorp, chiar dacă o perioadă lungă de timp, la contactul cu respectivul antigen. <br/>
+                Imunitatea poate fi dobândită: <br/>
+                natural - în urma contactului organismului cu antigena <br/>
+                artificial - prin vaccinuri care conțin virusul mort/inactiv sau prin seruri care conțin anticorpi pentru virus 
                 DETERMINISMUL CROMOZOMILOR SEXELOR <br/>
                 - Cromozomii identici la cele două sexe se numesc autozomi, iar cei diferiți se numesc heterozomi. <br/>
                 Ei determină genele care determină sexul. <br/>
