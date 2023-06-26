@@ -74,7 +74,7 @@ export default function Respiratia() {
                 - mușchii se relaxează <br/> 
                 - volumul cavității toracice și al plămânilor scade <br/> 
                 - presiunea aerului din plămâni crește peste valoarea presiunii atmosferice și aerul este eliminat din plămâni <br/>                    
-                Boli ale sistemului respirator la om
+                Boli ale sistemului respirator la om <br/>
                 <span className="font-extrabold"><i>Bronșita</i></span> <br/>
                 <span className="underline">Cauze</span> <br/>
                 - Inflamarea mucoasei arborelui bronșic <br/>

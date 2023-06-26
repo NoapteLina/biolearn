@@ -5,39 +5,39 @@ import { Router } from 'next/router'
 import BioLearnLogo from './icons/logo/BioLearnLogo'
 
 const navigation = [
-  { name: 'Acasa', href: '/', current: true }, //FIXME: a replacement 
+  { name: 'Acasă', href: '/', current: true }, 
   { name: 'Cuprinsuri', href: '#', current: false },
   { name: 'Reports', href: '#', current: false },
 ]
 const Cuprins9 = [
   { name: '1. Celula și compoziția ei chimică', href: '/9/celula' },
-  { name: '2. Celula procariotă', href: '#' },
-  { name: '3. Celula eucariotă', href: '#' },
-  { name: '4. Peretele celular + Membrana celulară', href: '#' },
-  { name: '5. Citoplasma', href: '#' },
-  { name: '6. Organitele celulare', href: '#' },
-  { name: '7. Cromozomii', href: '#' },
-  { name: '8. Diviziunea celulara', href: '#' },
-  { name: '9. Mitoza.Meioza', href: '#' },
-  { name: '10. Ereditatea și variabilitatea lumii vii', href: '#' },
+  { name: '2. Celula procariotă', href: '/9/procariota' },
+  { name: '3. Celula eucariotă', href: '/9/eucariota' },
+  { name: '4. Peretele celular + Membrana celulară', href: '/9/perete' },
+  { name: '5. Citoplasma', href: '/9/citoplasma' },
+  { name: '6. Organitele celulare', href: '/9/organite' },
+  { name: '7. Cromozomii', href: '/9/cromozomi' },
+  { name: '8. Diviziunea celulara', href: '/9/diviziune' },
+  { name: '9. Mitoza.Meioza', href: '/9/mitoza-meioza' },
+  { name: '10. Ereditatea și variabilitatea lumii vii', href: '/9/ereditatea' },
   {
-    name: '11. Grupe de sange.  Determinismul cromozomilor sexelor. Influența mediului asupra eredității.',
-    href: '#',
-  }, //TODO: a replacement
-  { name: '12. Genetica umană', href: '#' },
-  { name: '13. Diversitatea lumii vii', href: '#' },
+    name: '11. Grupe de sânge.  Determinismul cromozomilor sexelor. Influența mediului asupra eredității.',
+    href: '/9/grupe de sange',
+  }, 
+  { name: '12. Genetica umană', href: '/9/genetica' },
+  { name: '13. Diversitatea lumii vii', href: '/9/diversitate' },
 ]
 const Cuprins10 = [
-  { name: '1. Țesuturi vegetale', href: '#' },
-  { name: '2. Țesuturi animale', href: '#' },
-  { name: '3. Nutriția și digestia', href: '#' },
-  { name: '4. Respirația', href: '#' },
-  { name: '5. Circulația', href: '#' },
-  { name: '6. Excreția', href: '#' },
-  { name: '7. Funcțiile de relație', href: '#' },
-  { name: '8. Sistemul nervos la mamifere', href: '#' },
-  { name: '9. Reproducerea la plante', href: '#' },
-  { name: '10. Reproducerea la om', href: '#' },
+  { name: '1. Țesuturi vegetale', href: '/10/tesuturi/vegetale' },
+  { name: '2. Țesuturi animale', href: '/10/tesuturi/animale' },
+  { name: '3. Nutriția și digestia', href: '/10/nutritia' },
+  { name: '4. Respirația', href: '/10/respiratia' },
+  { name: '5. Circulația', href: '/10/circulatia' },
+  { name: '6. Excreția', href: '/10/excretia' },
+  { name: '7. Funcțiile de relație', href: '/10/relatie' },
+  { name: '8. Sistemul nervos la mamifere', href: '/10/nervos' },
+  { name: '9. Reproducerea la plante', href: '/10/reproducere/plante' },
+  { name: '10. Reproducerea la om', href: '/10/reproducere/om' },
 ]
 
 function classNames(...classes: any) {
@@ -49,22 +49,20 @@ function Navbar() {
   return (
     <>
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-emerald-600">
           {({ open }) => (
             <>
-              {/* //FIXME: inline */}
               <div className="mx-16 max-w-full px-4 sm:px-6 lg:px-8">
-                <div className="flex h-16 items-center justify-between">
+                <div className="flex h-14 ">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                    <div className="w-16 h-16">
-                      <BioLearnLogo />
+                      <div className="h-16 w-16">
+                        <BioLearnLogo />
+                      </div>
                     </div>
-                      {/* //TODO:logo8 */}
-                    </div>
-                    
+
                     <div className="hidden md:block">
-                      <div className="ml-10 flex items-baseline space-x-4">
+                      <div className="ml-10 flex display: inline-flex space-x-4">
                         {navigation.map((item) => (
                           <a
                             key={item.name}
@@ -72,8 +70,8 @@ function Navbar() {
                             // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
                             className={classNames(
                               item.current
-                                ? 'bg-gray-900 text-white'
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                ? 'bg-green-500 text-white'
+                                : 'text-white hover:bg-green-500 hover:text-white',
                               'rounded-md px-3 py-2 text-sm font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
@@ -83,7 +81,7 @@ function Navbar() {
                         ))}
                       </div>
                       {/*div for dropdown*/}
-                      <span className="ml-10 flex items-baseline space-x-4">
+                      <span className="ml-0 flex inline-flex space-x-4">
                         <div className="relative inline-block text-left">
                           <Menu>
                             {({ open }) => (
@@ -92,8 +90,8 @@ function Navbar() {
                                   <Menu.Button
                                     className={classNames(
                                       open
-                                        ? 'bg-gray-900 text-white'
-                                        : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                        ? 'bg-green-500 text-white'
+                                        : 'text-white hover:bg-green-500 hover:text-white',
                                       'rounded-md px-3 py-2 text-sm font-medium'
                                     )}
                                   >
@@ -113,9 +111,9 @@ function Navbar() {
                                 >
                                   <Menu.Items
                                     static
-                                    className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                    className="absolute -left-16 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"		
                                   >
-                                    <div className="py-1">
+                                    <div className="py-1 text-center">
                                       {Cuprins9.map((item) => (
                                         <Menu.Item key={item.name}>
                                           {({ active }) => (
@@ -138,7 +136,7 @@ function Navbar() {
                             )}
                           </Menu>
                         </div>
-                        <div className="relative inline-block text-left">
+                        <div className="relative inline-block text-center">
                           <Menu>
                             {({ open }) => (
                               <>
@@ -146,8 +144,8 @@ function Navbar() {
                                   <Menu.Button
                                     className={classNames(
                                       open
-                                        ? 'bg-gray-900 text-white'
-                                        : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                        ? 'bg-green-500 text-white'
+                                        : 'text-white hover:bg-green-500 hover:text-white',
                                       'rounded-md px-3 py-2 text-sm font-medium'
                                     )}
                                   >
@@ -167,7 +165,7 @@ function Navbar() {
                                 >
                                   <Menu.Items
                                     static
-                                    className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                    className="absolute -left-16 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                                   >
                                     <div className="py-1">
                                       {Cuprins10.map((item) => (

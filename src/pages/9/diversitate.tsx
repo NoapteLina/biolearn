@@ -6,7 +6,27 @@ export default function Lumea() {
             <h1 className=" text-center text-3xl">DIVERSITATEA LUMII VII</h1>
             <div className="mt-4 ml-1">
                 Definiție: Știința ce studiază clasificarea lumii vii se numește sistematică sau taxonomie. <br/>
-                Unitățile de clasificare sunt numite taxoni: specie - gen - familie - ordin - clasă - încrengătură - regn. <br/>
+                Unitățile de clasificare sunt numite taxoni: <br/>
+                -specie <br/>
+                - gen  <br/>
+                - familie <br/>
+                - ordin  <br/>
+                - clasă  <br/>
+                - încrengătură <br/> 
+                - regn <br/>
+                Denumirea științifică a unui individ se scrie în limba latină și este formată din 2 cuvinte:  <br/>
+                - primul cuvânt  desemnează genul și se scrie cu literă mare <br/>
+                - al doilea cuvânt reprezintă specia, scris cu literă mică <br/>
+                ex: Homo sapiens sapiens <br/>
+                Organismele vii sunt clasificate în 5 regnuri:  <br/>
+                - Monera <br/>
+                - Protista <br/>
+                - Fungi <br/>
+                - Plante <br/>
+                - Animale <br/>
+
+
+
                 VIRUSURILE <br/>
                 - Sunt entități infecțioase, submicroscopice, lipsite de organizare celulară (acelulare), deci nu fac parte din cele cinci regnuri ale lumii vii. <br/>
                 - Acestea nu se pot înmulți singure, ci sunt înmulțite de celula vie pe care o parazitează. <br/> 
@@ -21,7 +41,7 @@ export default function Lumea() {
                 Virionul întreg pătrunde în celulă, și își părăsește capsida (rămâne în afara celulei gazdă) rezultă virus vegetativ. <br/>
                 Virusul vegetativ se integrează în genomul celulei gazdă rezultă provisus. <br/>
                 Se multiplică odată cu materialul genetic al celulei gazdă, genomurile nou formate și capsidele nou formate se asamblează rezultă noi virioni care vor părăsi celula gazdă distrugând-o, urmând să invadeze alte celule, astfel se răspândește infecția. <br/>
-                Virusurile provoacă boli numite  viroze la plante, aniamale, om (gripă, SIDA, hepatită, variolă, rubeolă, oreion etc.).
+                Virusurile provoacă boli numite  viroze la plante, aniamale, om (gripă, SIDA, hepatită, variolă, rubeolă, oreion etc.). <br/>
 
                 REGNUL MONERA <br/>
                 - Cuprinde bacteriile, care sunt microscopice (microorganisme) și au organizare celulară de tip procariot. <br/> 
