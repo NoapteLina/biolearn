@@ -15,6 +15,7 @@ export default function Sange() {
                 Imunitatea poate fi dobândită: <br/>
                 natural - în urma contactului organismului cu antigena <br/>
                 artificial - prin vaccinuri care conțin virusul mort/inactiv sau prin seruri care conțin anticorpi pentru virus 
+                
                 DETERMINISMUL CROMOZOMILOR SEXELOR <br/>
                 - Cromozomii identici la cele două sexe se numesc autozomi, iar cei diferiți se numesc heterozomi. <br/>
                 Ei determină genele care determină sexul. <br/>

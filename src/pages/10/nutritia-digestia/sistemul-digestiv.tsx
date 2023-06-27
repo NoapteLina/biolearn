@@ -1,37 +1,10 @@
 import React from "react"
-export default function Nutriția() {
+export default function Sistem() {
     return(
         <>
         <div className="" >
-            <h1 className=" text-center text-3xl">NUTRIȚIA ȘI DIGESTIA</h1>
+            <h1 className=" text-center text-3xl">SISTEMUL DIGESTIV</h1>
             <div className="mt-4 ml-1">
-            Nutriția <br/>
-            Nutriția poate fi: <br/> 
-            - autotrofă <br/>
-            - heterotrofă <br/> 
-            - mixotrofă <br/> 
-            - la baza lor sta metabolismul <br/> 
-            Metabolismul reprezinta schimbul de substanțe și energie dintre organism și mediul de viață; 
-            totalitatea proceselor biologice și biochimice care asigură autoconservarea 
-            organismului. <br/> 
-            Metabolismul presupune: <br/>
-            1. ANABOLISM = asimilație = sinteza de substanțe necesare organismului cu consum de energie <br/> 
-            2. CATABOLISM = dezasimilație = degradarea substanței dintre organism cu eliberare de energie <br/>
-            
-            Digestia la animale <br/>
-            <span className="font-extrabold">Definiție:</span> Digestia este procesul prin care sunt degradate substanțele complexe din alimente (hrana) în substanțe simple numite 
-            nutrimente care sunt conduse de către sânge la țesuturi și celule. <br/>
-            Digestia presupune o serie de procese: chimice (hidroliza), mecanice (mărunțirea) și fizice (dizolvarea, umectarea). <br/> 
-            Digestia poate fi: <br/> 
-            1. INTRACELULARĂ: <br/> 
-            - protozoare <br/>
-            - spongieri/celenterate <br/> 
-            - se realizează într-o vacuolă digestivă prin fagocitoză (particula solidă) sau pinocitoza <br/> 
-            2. EXTRACELULARĂ <br/> 
-            - la animale evoluate (presupune prezența sistemului digestiv) <br/> 
-            - își digera hrana cu ajutorul sucurilor digestive din enzime proteolitice, glicolitce și lipolitice, apa, mucus și ioni minerali
-
-            Sistemul digestiv <br/>
             Sistemul digestiv este format din tub digestiv și glande anexe. <br/> 
             <span className="font-extrabold">TUB DIGESTIV</span> <br/> 
             <span className="font-extrabold">1. Cavitatea bucală</span> <br/> 
@@ -86,70 +59,7 @@ export default function Nutriția() {
                 - canalul cistic - vezica biliară în perioadele interdigestice <br/> 
                 - canalul coledoc - duoden în perioadele digestive <br/>
 
-            Sucurile digestive
-            1. Saliva - produsă de glandele salivare <br/> 
-            2. Bila - produsă de ficat <br/> 
-            3. Sucul pancreatic - produs de pancreas (partea exocrină) <br/> 
-            4. Sucul intestinal - produs de intestinul subțire <br/> 
-            5. Sucul gastric - produs de stomac <br/> 
-            Primele 3 sunt produse de <i>glandele anexe.</i> <br/> 
-            Ultimele două sunt produse de componentele <i>tubului digestiv.</i> <br/> 
-            <span className="underline">1. SALIVA</span> <br/> 
-            Conține: <br/> 
-            - apă <br/> 
-            - mucus <br/> 
-            - ioni minerali <br/> 
-            - substanță bactericidă = LIZOZIM <br/> 
-            - o singură enzimă digestivă (enzime glicolitice) = amilază salivară/ptialina <br/> 
-            AMIDON - ZAHARURI SIMPLE <br/> 
-            <span className="underline">2. BILA</span> <br/> 
-            Este singurul suc digestiv care nu conține enzime. <br/> 
-            Conține: <br/> 
-            - apă <br/> 
-            - săruri <br/> 
-            - pigmenți biliari: săruri și acizi/biliverdina și bilirubina <br/> 
-            - acizi <br/> 
-            - colesterol + lecitină <br/> 
-            Rol: <br/> 
-            - fragmentează/emulsionează lipidele <br/> 
-            - activează lipazele (enzime lipolitice) <br/> 
-            - determină absorbția acizilor grași <br/> 
-            <span className="underline">3. SUCUL GASTRIC</span> <br/> 
-            Conține: <br/> 
-            - apă <br/> 
-            - mucus <br/> 
-            - ioni minerali <br/>
-            - acid clorhidric <br/> 
-            - enzime proteolitice și lipolitice <br/> 
-            HCl: <br/> 
-            - nu distruge stomacul (acesta prezintă mucus) <br/> 
-            - distruge bacteriile care ajung odată cu alimentele în stomac <br/> 
-            - activează lipazele <br/> 
-            Enzimele proteolitice: <br/> 
-            - labfermentul = coagulează laptele la sugari în prezența calciului <br/> 
-            - pepsina =  este secretată în stomac sub formă inactivă = PEPSINOGEN <br/> 
-            <span className="underline">4. SUCUL PANCREATIC</span> <br/> 
-            Conține: <br/> 
-            - apă <br/> 
-            - mucus <br/> 
-            - ioni minerali <br/> 
-            - bicarbonați <br/> 
-            - enzime proteolitice, glicolitice și lipolitice <br/> 
-            Enzimele proteolitice: <br/>
-            - tripsina <br/> 
-            - chemotripsina <br/> 
-            - carboxipeptidaza <br/> 
-            - elastază <br/> 
-            - colagenoza <br/> 
-            <span className="underline">5. SUCUL INTESTINAL</span> <br/> 
-            Conține: <br/> 
-            - apă <br/> 
-            - mucus <br/> 
-            - ioni minerali <br/> 
-            - bicarbonați <br/> 
-            - enzime proteolitice, lipolitice și glicolitice <br/>         
-
-            Boli ale sistemului digestiv
+            BOLI ALE SISTEMULUI DIGESTIV <br/>
             <span className="font-extrabold"><i>Gastrita</i></span> <br/> 
             <span className="underline">Cauze</span> <br/> 
             - Iritații produse de: alcool, tutun, substanțe caustice <br/> 

@@ -9,19 +9,25 @@ function Cuprins (){
             <div className="line line2"></div>
             <div className="line line3"></div>
             <div className="container">
-                <p className="container1 text-black"><button onClick={()=>void router.push('/9/celula')}>1. Celula și compoziția ei chimică</button></p>
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>2. Celula procariotă</button></p> 
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>3. Celula eucariotă</button></p> 
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>4. Peretele celular + Membrana celulară</button></p> 
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>5. Citoplasma</button></p> 
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>6. Organitele celulare</button></p> 
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>7. Cromozomii</button></p> 
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>8. Diviziunea celulara</button></p> 
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>9. Mitoza.Meioza</button></p> 
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>10. Ereditatea și variabilitatea lumii vii</button></p> 
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>11. Grupe de sânge. Determinismul cromozomilor sexelor. Influența mediului asupra eredității.</button></p> 
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>12. Genetica umană</button></p> 
-                <p className="container1 text-black"><button onClick={()=>void router.push('/')}>13. Diversitatea lumii vii</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/9/celula')}> Celula și compoziția ei chimică</button></p>
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Celula procariotă</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Celula eucariotă</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Peretele celular + Membrana celulară</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Citoplasma</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Organitele celulare</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Cromozomii</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Diviziunea celulara</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Mitoza.Meioza</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Ereditatea și variabilitatea lumii vii</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Grupe de sânge. Determinismul cromozomilor sexelor. Influența mediului asupra eredității.</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Genetica umană</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Diversitatea lumii vii</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Virusuri</button></p>
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Regnul Monera</button></p> 
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Regnul Protista</button></p>
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Regnul Fungi</button></p>
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Regnul Plante</button></p>
+                <p className="container1 text-black"><button onClick={()=>void router.push('/')}> Regnul Animal</button></p>
             </div>
         </>
     )

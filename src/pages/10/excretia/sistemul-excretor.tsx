@@ -1,21 +1,10 @@
 import React from "react"
-export default function Excretia() {
+export default function Sistem() {
     return(
         <>
         <div className="" >
-            <h1 className=" text-center text-3xl">EXCREȚIA</h1>
+            <h1 className=" text-center text-3xl">Sistemul excretor</h1>
             <div className="mt-4 ml-1">
-                Definiție: <br/>
-                Funcție de nutriție prin care sunt eliminate diverse substanțe: <br/>
-                - în exces <br/>
-                - din dezasmilație (dacă se acumulează devin toxice) <br/>
-                - substanțe străine <br/>
-                - cu rol de mesaj chimic <br/>
-                EXCREȚIA LA PLANTE <br/>
-                Eliminarea apei se realizează prin două procese: <br/>
-                <span className="font-extrabold">1. Transpirația</span> - sub formă de vapori <br/>
-                <span className="font-extrabold">2. Gutația</span> - sub formă de picături <br/>
-                SISTEMUL EXCRETOR <br/>
                 Este format din: <br/>
                 <span className="underline">1. RINICHI</span> <br/>
                 <span className="underline">2. CĂI URINARE:</span> <br/>
@@ -42,7 +31,8 @@ export default function Excretia() {
                 - tub contort distal <br/> 
                 rezultă TUBUL COLECTOR <br/> 
                 La nivelul nefronilor se formează urina. <br/>
-                BOLI ALE SISTEMULUI EXCRETOR LA OM <br/>
+
+                BOLI ALE SISTEMULUI EXCRETOR <br/>
                 <span className="font-extrabold"><i>Litiaza urinară</i></span> <br/>
                 <span className="underline">Cauze</span> <br/>
                 - Tulburări de metabolism al apei și al sărurilor minerale <br/>

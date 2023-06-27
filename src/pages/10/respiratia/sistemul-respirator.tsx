@@ -1,37 +1,10 @@
 import React from "react"
-export default function Respiratia() {
+export default function Sistem() {
     return(
         <>
         <div className="" >
-            <h1 className=" text-center text-3xl">RESPIRAȚIA</h1>
+            <h1 className=" text-center text-3xl">SISTEMUL RESPIRATOR</h1>
             <div className="mt-4 ml-1">
-                Definiție: Reprezintă procesul prin care se asigură schimbul de gaze, energia în urma oxidării substanțelor organice, iar energia rezultată este 
-                folosită la realizarea funcțiilor vitale. <br/>
-                La plante se desfășoară în toate organele, dar mai ales în frunze (mitocondria). <br/>
-                Respirația poate fi: <br/>
-                - aerobă <br/>
-                - anaerobă (fermentație) <br/>
-                Fermentația este de mai multe tipuri: <br/>
-                - alcoolică <br/>
-                - lactică <br/>
-                - acetică <br/>
-                Fermentația alcoolică <br/>
-                - transformarea glucozei în alcool etilic realizată de ciuperci numite drojdii <br/>
-                <span className="font-extrabold">Importanță</span> <br/>
-                - producerea alcoolului <br/>
-                Fermentația lactică <br/>          
-                - transformarea glucozei în acid lactic <br/>
-                - realizată de bacterii <br/>
-                <span className="font-extrabold">Importanță</span> <br/>
-                - producerea iaurtului <br/>
-                - acidul lactic este un bun conservant pentru murături <br/>
-                Fermentația acetică <br/>
-                - transformarea glucozei în acid acetic <br/>
-                - proces atipic, în prezența oxigenului <br/>
-                - realizată de bacterii <br/>
-                <span className="font-extrabold">Importanță</span> <br/>
-                - producerea oțetului <br/>
-                Sistemul respirator  <br/>   
                 Este alcătuit din: <br/>
                 1. Căi respiratorii: <br/> 
                 - fose nazale <br/>
@@ -73,8 +46,9 @@ export default function Respiratia() {
                 - proces pasiv <br/> 
                 - mușchii se relaxează <br/> 
                 - volumul cavității toracice și al plămânilor scade <br/> 
-                - presiunea aerului din plămâni crește peste valoarea presiunii atmosferice și aerul este eliminat din plămâni <br/>                    
-                Boli ale sistemului respirator la om <br/>
+                - presiunea aerului din plămâni crește peste valoarea presiunii atmosferice și aerul este eliminat din plămâni <br/>  
+
+                BOLI ALE SISTEMULUI RESPIRATOR <br/>
                 <span className="font-extrabold"><i>Bronșita</i></span> <br/>
                 <span className="underline">Cauze</span> <br/>
                 - Inflamarea mucoasei arborelui bronșic <br/>
