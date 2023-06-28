@@ -1,6 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
  import React from "react"
- export default function Cromozomi() {
+ export default function Mitoza() {
      return(
          <>
          <div
@@ -35,52 +35,58 @@
          <div className=" py-24 sm:py-12">
              <div className="mx-auto max-w-7xl px-6 lg:px-2">
                  <div className="mx-auto max-w-7xl lg:mx-0">
-                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">CROMOZOMII</h2>
+                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Citoplasma (=citosol)</h2>
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
                      <p className="mt-0 text-lg text-grey-600 text-center">
-                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Definiție: </span> Sunt structuri permanente în nucleu - vizibili doar în timpul diviziunii nucleului (sub formă condensată spiralizată). <br/>
+                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Definiție: </span> Este procesul de diviziune prin care dintr-o celulă cu set diploid de cromozomi rezultă două celule-fiice, tot diploide, identice din punct de vedere ereditar. <br/>
                      </p>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
                      <p className="mt-0 text-lg text-grey-600">
-                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Tipuri de cromozomi</span> <br/>
-                         Cromozomul poate fi: <br/>
-                         - de tip procariot = o singură moleculă de ADN (un singur cromozom bacterian) <br/>
-                         - de tip eucariot = ADN + proteine + lipide + ioni <br/>
+                        - Are loc în celulele somatice ale organismelor eucariote. <br/>
+                        - Este un proces continuu care începe cu diviziunea zigotului și se continuă cu formarea și creșterea țesuturilor și organelor. <br/>
+                        - Convențional, diviziunea propriu-zisă a nucleului este împărțită în 4 faze succesive: profaza, metafaza, anafaza și telofaza. <br/>
                      </p>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
                      <p className="mt-0 text-lg text-grey-600">
-                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Celulele</span> <br/>
-                         <span className="underline text-green-700">1. Celule somatice</span> (2n = diploide) = celulele corpului (cu excepția celulelor sexuale) <br/>
-                         - prezintă două tipuri de cromozomi, unul de la tată și unul de la mamă <br/>
-                         <span className="underline text-green-700">2. Celulele reproducătoare</span> (n = haploide) = celulele sexuale (gametele) <br/>
-                         - au un număr de cromzomi redus la jumătate (un singur set de cromozomi) <br/>
+                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Fazele mitozei</span> <br/>
+                         <span className="underline decoration-wavy text-green-700">1. Profaza</span> <br/>
+                         - cea mai lungă <br/>
+                        - crește volumul nucleului <br/>
+                        - dispare memebrana nucleară + nucleolii <br/>
+                        - începe formarea fusului de diviziune <br/>
+                        <span className="underline decoration-wavy text-green-700">2. Metafaza</span> <br/>
+                        - fus de diviziune deja format <br/>
+                        - cromozomii bicromatidici se dispun în mijlocul fusului de diviziune ={">"} placa metafazică <br/>
+                        - spre sfârșitul metafazei are loc ruperea longitudinală a cromozomilor bicromatidici ={">"} cromozomi monocromatidici <br/>
+                        <span className="underline decoration-wavy text-green-700">3. Anafaza</span> <br/>
+                        - jumătate din cromozomii monocromatidici se deplasează spre un pol și jumătate spre celălalt pol al celulei <br/>
+                        - sunt atrași spre cei doi poli <br/>
+                        <span className="underline decoration-wavy text-green-700">4. Telofaza</span> <br/>
+                        - este inversul profazei <br/>
+                        - cromozomii monocromatidici ajung la cei doi poli <br/>
+                        - se formeză memebrana nucleară, nucleolii (a avut loc diviziunea nucleului ={">"} 2 nuclei-fii) CARIOCHINEZA <br/>
+                        - are loc diviziunea citoplasmei ={">"} 2 celule-fiice (cromozomi monocromatidici) CITOCHINEZA <br/>
+                        <span className="underline decoratio-wavy text-green-700">5. Interfaza</span> <br/>
+                        - se dublează cantitatea de ADN = cromozomi bicromatidici (celule-fiice identice cu celula mamă) <br/>
                      </p>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
                      <p className="mt-0 text-lg text-grey-600">
-                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Caracteristici ale cromozomilor</span> <br/>
-                         Setul de cromozomi = totalitatea cromzomilor dintr-o celulă. <br/>
-                         <span className="underline decoration-wavy text-green-700">CARIOTIP</span>= numărul, mărimea și forma cromozomilor dintr-o celulă <br/>
-                         <span className="underline decoration-wavy text-green-700">CARIOGRAMA</span> = reprezentarea schematică a cariotipului <br/>
-                         OM: cariotip = 46 de cromozomi (23 de perechi) <br/>
-                         - 44 se numesc autozomi (22 de perechi) - identici la ambele sexe <br/>
-                         - 2 se numesc heterozomi (o pereche) - determină sexul <br/>
+                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Importanța mitozei</span> <br/>
+                         - organisme pluricelulare <br/>
+                        - descendenți identici cu părinții <br/>
+                        - se menține numărul de cromozomi <br/>
+                        - refacerea țesuturilor rănite sau îmbătrânite <br/>
+                        - celule care pot reconstitui un fragment dintr-un organism sau întreg organismul parental <br/>
                      </p>
                      
-                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
- 
-                     <p className="mt-0 text-lg text-grey-600">
-                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Structura cromozomului:</span> <br/>
-                         - brațele cromozomilor = CROMATIDE <br/>
-                         - cromatina = ADN spiralat <br/>
-                         - cromozomi: 2 brațe (bicromatidici), un braț (monocromatidici), tetracromatidici <br/>
-                     </p>
+                     
                  </div>
              </div>
          </div>

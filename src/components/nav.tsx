@@ -33,8 +33,8 @@ export default function Nav() {
   return (
     <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div className="flex lg:flex-1 -m-1.5 p-1.5">
-            <div className="h-16 w-16">
+        <div className="flex lg:flex-1 -m-16 p-8">
+            <div className="h-20 w-20">
               <BioLearnLogo />
             </div>
         </div>
