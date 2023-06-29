@@ -103,7 +103,7 @@ export default function Model8() {
             Subiectul al III-lea <br/>
             1.  Sitemul digestiv al mamiferelor este alcătuit din tub digestiv și glande anexe. <br/>
             a) Numiți trei componente ale tubului digestiv al mamiferelor. <br/>
-            b) Scrieți un argument în favoarea afirmației următoare: „Compoziția chimică a salivei se deosebește de compoziția chimă a bilei”. <br/>
+            b) Scrieți un argument în favoarea afirmației următoare: „Compoziția chimică a salivei se deosebește de compoziția chimă a bilei". <br/>
             c) Construiți patru enunțuri afirmative, câte două pentru fiecare conținut, utilizând limbajul științific adecvat. <br/>
             Folosiți, în acest scop, informații referitoare la următoarele conținuturi: <br/>
             - Sucul pancreatic <br/>
@@ -116,8 +116,8 @@ export default function Model8() {
 
             2. Urechea este unul dintre organele de simț care împreună cu sistemul nervos au rol în realizarea sensibilității la mamifere. <br/>
             a) Precizați numele celor trei oscioare din urechea medie a mamiferelor. <br/>
-            b) Explicați afirmația următoare: „Leziuni la nivelul urechii interne a mamiferelor pot afecta menținerea echilibrului corpului”. <br/>
-            c) Alcătuiți un minieseu intitulat „Boli ale sistemului nevrvos central la om”, folosind informația științifică adecvată. <br/>
+            b) Explicați afirmația următoare: „Leziuni la nivelul urechii interne a mamiferelor pot afecta menținerea echilibrului corpului". <br/>
+            c) Alcătuiți un minieseu intitulat „Boli ale sistemului nevrvos central la om", folosind informația științifică adecvată. <br/>
             În acest scop, respectați următoarele etape: <br/>
             - enumerarea a șase noțiuni specifice acestei teme; <br/>
             - construirea, cu ajutorul acestora, a unui text coerent, format din maximum trei-patru fraze, folosind corect și în corelație noțiunile enumerate. <br/>

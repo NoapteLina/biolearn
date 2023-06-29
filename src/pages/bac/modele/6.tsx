@@ -100,7 +100,7 @@ export default function Model6() {
             Subiectul al III-lea <br/>
             1. Sensibilitatea la mamifere este asigurată de sistemul nervos și de organele de simț. <br/>
             a) Numiți trei tipuri de receptori conținuți de piele/tegumentari. <br/>
-            b) Scrieți un argument în favoarea afirmației următoare: „Celulele cu conuri au rol în vederea în culori”. <br/>
+            b) Scrieți un argument în favoarea afirmației următoare: „Celulele cu conuri au rol în vederea în culori". <br/>
             c) Construiți patru enunțuri afirmative, câte două pentru fiecare conținut, utilizând limbajul științific adecvat. <br/>
             Folosiți, în acest scop, informații referitoare la următoarele conținuturi: <br/>
             - Rolul măduvei spinării la mamifere <br/>
@@ -114,8 +114,8 @@ export default function Model6() {
 
             2. Digestia, circulația, respirația și excreția participă la realizarea funcțiilor de nutriție. 
             a) Precizați localizarea rinichilor și două componente structurale ale acestora. <br/>
-            b) Explicați afirmația următoare: „Mitocondria este sediul respirației aerobe, la eucariote”. <br/>
-            c) Alcătuiți un minieseu intitulat „Fotosinteza - etape, importanță”, folosind informația științifică adcvată. În acest scop, respectați următoarele
+            b) Explicați afirmația următoare: „Mitocondria este sediul respirației aerobe, la eucariote". <br/>
+            c) Alcătuiți un minieseu intitulat „Fotosinteza - etape, importanță", folosind informația științifică adcvată. În acest scop, respectați următoarele
             etape: <br/>
             - enumerarea a șase noțiuni specifice acestei teme; <br/>
             - construirea, cu ajutorul acestora, a unui text coerent, format din maximum trei-patru fraze, folosind corect și în corelație noțiunile enumerate. <br/>

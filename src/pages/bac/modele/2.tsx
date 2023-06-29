@@ -9,7 +9,7 @@ export default function Model2() {
                 Excreția se realizează la nivelul mai multor organe, eliminându-se astfel substnțele nefolositoare din corp. <br/>
                 a) enumerați componentele sistemului excretor la mamifere; <br/>
                 b) precizați rolul nefronilor și localizarea lor renală; <br/>
-                c) alcătuiți un minieseu intitulat „Excreția la plante”, folosind informația științifica adecvată. <br/>
+                c) alcătuiți un minieseu intitulat „Excreția la plante", folosind informația științifica adecvată. <br/>
                 În acest scop, respectați următoarele etape: <br/>
                 - enumerați șase noțiuni specifice acestei teme; <br/>
                 - construirea, cu ajutorul acestora, a unui text coerent, format din maximum trei - patru fraze, folosind corect și în corelație, noțiunile enumerate. <br/>

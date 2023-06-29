@@ -102,7 +102,7 @@ export default function Model3() {
             Subiectul al III-lea <br/>
             1. Organismele vii sunt clasificate în cinci regnuri. Două dintre acestea sunt: regnul Plante și regnul Fungi. <br/>
             a) Numiți un alt regn și doi reprezentați ai acestui regn. <br/>
-            b) Scrieți un argument în favoarea afirmației următoare: „Plantele se hrănesc, în marea lor majoritate, autotrof”. <br/>
+            b) Scrieți un argument în favoarea afirmației următoare: „Plantele se hrănesc, în marea lor majoritate, autotrof". <br/>
             c) Construiți patru enunțuri afirmative, câte două pentru fiecare conținut, utilizând limbajul științific adecvat. <br/>
             Folosiți, în acest scop, informații referitoare la următoarele conținuturi: <br/>
             - Virusurile - caractere generale <br/>
@@ -117,8 +117,8 @@ export default function Model3() {
 
             2. Ochiul este unul dintre organele de simț ale mamiferelor. <br/>
             a) Numiți alte trei organe de simț ale mamiferelor. <br/>
-            b) Explicați afirmația următoare: „Miopia se corectează cu lentile divergente”. <br/>
-            c) Alcătuiți un minieseu intitulat „Globul ocular la mamifere”, folosind informația științifică adecvată. <br/>
+            b) Explicați afirmația următoare: „Miopia se corectează cu lentile divergente". <br/>
+            c) Alcătuiți un minieseu intitulat „Globul ocular la mamifere", folosind informația științifică adecvată. <br/>
             În acest scop, respectați următoarele etape: <br/>
             - enumerarea a șase noțiuni specifice acestei teme; <br/>
             - construirea, cu ajutorul acestora, a unui text coerent, format din maximum trei-patru fraze, folosind corect și în corelație noțiunile enumerate. <br/>

@@ -38,7 +38,7 @@ export default function Plante() {
                 <span className="font-extrabold">Tipuri de fructe:</span> <br/>
                 <span className="underline">1. cărnoase:</span> drupe, bace <br/>
                 <span className="underline">2. uscate:</span> indehiscente, dehiscente <br/>
-                <span className="font-extrabold">Obs:</span> Când la formarea fructelor participă și alte elemente ale florii, se numesc frcute ”false”. <br/>
+                <span className="font-extrabold">Obs:</span> Când la formarea fructelor participă și alte elemente ale florii, se numesc frcute "false". <br/>
                 La măr, căpșun și măceș, partea comestibilă se formează din receptacul.
             </div>
         </div>

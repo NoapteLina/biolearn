@@ -120,8 +120,8 @@ export default function Model10() {
 
             2. Celulele eucariote se divid direct prin mitoză și meioză. Profaza este una dintre fazele mitozei. <br/>
             a) Precizați alte trei faze ale mitozei. <br/>
-            b) Scrieți un argument în favoarea afirmației următoare: „Profaza mitozei se deosebește de profaza I a meiozei”. <br/>
-            c) Alcătuiți un minieseu intitulat „Clasificarea mutațiilor”. <br/>
+            b) Scrieți un argument în favoarea afirmației următoare: „Profaza mitozei se deosebește de profaza I a meiozei". <br/>
+            c) Alcătuiți un minieseu intitulat „Clasificarea mutațiilor". <br/>
             În acest scop, respectați următoarele etape: <br/>
             - enumerarea a șase noțiuni specifice acestei teme; <br/>
             - construirea, cu ajutorul acestora, a unui text coerent, format din maximum trei-patru fraze, folosind corect și în corelație noțiunile enumerate. <br/>

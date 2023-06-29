@@ -55,7 +55,7 @@ export default function Model9() {
             Subiectul al II-lea <br/>
             A Sedentarismul este una dintre cauzele aterosclerozei. <br/>
             a) Precizați alte două cauze ale aterosclerozei, două manifestări și o măsură de prevenire. <br/>
-            b) Explicați afirmația următoare: „Ateroscleroza poate fi o cauză a accidentului vascular cerebral”. <br/>
+            b) Explicați afirmația următoare: „Ateroscleroza poate fi o cauză a accidentului vascular cerebral". <br/>
             c) Calculați masa apei din plasma sângelui unui sportiv de performanță, știind următoarele: <br/>
             - sângele reprezintă 8% din masa corpului; <br/>
             - plasma sangvină reprezintă 55% din masa sângelui; <br/>
@@ -102,7 +102,7 @@ export default function Model9() {
             Subiecul al III-lea <br/>
             1.  În funcție de sursa de carbon, în lumea vie sunt întâlnite modul de nutriție autotrof și modul de nutriție heterotrof. <br/>
             a) Scrieți ecuația chimică a fotosintezei. <br/>
-            b) Explicați afirmația următoare: „Ficatul participă la digestia intestinală a lipidelor.” <br/>
+            b) Explicați afirmația următoare: „Ficatul participă la digestia intestinală a lipidelor." <br/>
             c) Construiți patru enunțuri afirmative, câte două pentru fiecare conținut, utilizând limbajul științific adecvat. <br/>
             Folosiți, în acest scop, informații referitoare la următoarele conținuturi: <br/>
             - Nutriția parazită <br/>
@@ -116,8 +116,8 @@ export default function Model9() {
 
             2. Ventilația pulmonară presupune două mișcări respiratorii: inspirația și expirația. 
             a) Precizați trei caracteristici ale expirației. <br/>
-            b) Scrieți un argument în favoarea afirmației următoare: „Globulele roșii au rol în transportul gazelor respiratorii”. <br/>
-            c) Alcătuiți un minieseu intitulat „Boli ale sistemului respirator la om”. <br/>
+            b) Scrieți un argument în favoarea afirmației următoare: „Globulele roșii au rol în transportul gazelor respiratorii". <br/>
+            c) Alcătuiți un minieseu intitulat „Boli ale sistemului respirator la om". <br/>
             În acest scop, respectați următoarele etape: <br/>
             - enumerarea a șase noțiuni specifice acestei teme; <br/>
             - construirea, cu ajutorul acestora, a unui text coerent, format din maximum trei-patru fraze, folosind corect și în corelație noțiunile enumerate. <br/>

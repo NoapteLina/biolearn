@@ -55,7 +55,7 @@ export default function Model4() {
             A Sistemul circulator al mamiferelor este alcătuit din inimă și vase de sânge. <br/>
             a) Numiți cele două compartimente ale inimii prin care circulă sânge oxigenat și vasele mari de sânge cu care comunică aceste două compartimente
             ale inimii. <br/>
-            b) Explicați afirmația următoare: „Sângele are rol în transportul gazelor respiratorii”. <br/>
+            b) Explicați afirmația următoare: „Sângele are rol în transportul gazelor respiratorii". <br/>
             c) Calculați masa apei din plasma sângelui unui tânăr, știind următoarele: <br/>
             - sângele reprezintă 7% din masa corpului; <br/>
             - plasma sangvină reprezintă 55% din masa sângelui; <br/>
@@ -116,8 +116,8 @@ export default function Model4() {
 
             2. Lumea vie este încadrată în cinci regnuri. Două dintre aceste regnuri cuprind plantele, respectiv animalele. <br/>
             a) Precizaţi alte două regnuri și câte un reprezentant pentru fiecare regn. <br/>
-            b) Scrieți un argument în favoarea afirmației următoare: „Amfibienii sunt vertebrate”. <br/>
-            c) Alcătuiţi un minieseu intitulat „Angiospermele”.  <br/>
+            b) Scrieți un argument în favoarea afirmației următoare: „Amfibienii sunt vertebrate". <br/>
+            c) Alcătuiţi un minieseu intitulat „Angiospermele".  <br/>
             În acest scop, respectaţi următoarele etape: <br/>
             -  enumerarea a şase noţiuni specifice acestei teme;  <br/> 
             -  construirea,  cu  ajutorul  acestora,  a  unui  text  coerent,  format  din  maximum  trei-patru fraze, folosind corect şi în corelaţie noţiunile enumerate. <br/>

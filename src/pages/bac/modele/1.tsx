@@ -6,7 +6,7 @@ export default function Model1() {
             <h1 className=" text-center text-3xl">MODEL BACALAUREAT</h1>
             <div className="mt-4 ml-1">
                 MINIESEU <br/>
-                Alcătuiți un minieseu intitulat „Tubul digestiv - componentă a sistemului digestiv al mamiferelor”, folosind informația științifică adecvată. În acest scop, respectați următoarele etape: <br/>
+                Alcătuiți un minieseu intitulat „Tubul digestiv - componentă a sistemului digestiv al mamiferelor", folosind informația științifică adecvată. În acest scop, respectați următoarele etape: <br/>
                 - enumerarea a șase noțiuni specifice acestei teme;<br/>
                 - contruirea cu ajutorul acestora, a unui text coerent, format din maximum trei - patru fraze, folosind corect și în corelație noțiunile enumerate. <br/>
                 Rezolvare: <br/>

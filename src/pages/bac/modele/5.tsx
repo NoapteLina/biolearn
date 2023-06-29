@@ -118,8 +118,8 @@ export default function Model5() {
 
             2. Organismele vii sunt clasificate în cinci regnuri, două dintre acestea fiind Monera (Procariota), respectiv Protiste. <br/>
             a) Precizați alte două regnuri și câte un reprezentant pentru fiecare regn. <br/>
-            b) Scrieți un argument în favoarea afirmației următoare: „Bacteriile sunt procariote”. <br/>
-            c) Alcătuiți un minieseu intitulat „Regnul Protiste”. <br/>
+            b) Scrieți un argument în favoarea afirmației următoare: „Bacteriile sunt procariote". <br/>
+            c) Alcătuiți un minieseu intitulat „Regnul Protiste". <br/>
             În acest scop, respectați următoarele etape: <br/>
             - enumărarea a șase noțiuni specifice acestei teme; <br/>
             - construirea, cu ajutorul acestora, a unui text coerent, format din trei-patru fraze, folosind corect și în corelație noțiunile enumerate. <br/>

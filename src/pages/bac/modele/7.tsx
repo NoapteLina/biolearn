@@ -104,7 +104,7 @@ export default function Model7() {
 
             Subiectul al III-lea <br/>
             1. a) Numiți trei componente ale țesutului osos compact. <br/>
-            b) Explicați afirmația următoare: „Epiteliile senzoriale intră în alcătuirea unor organe de simț”. <br/>
+            b) Explicați afirmația următoare: „Epiteliile senzoriale intră în alcătuirea unor organe de simț". <br/>
             c) Construiți patru enunțuri afirmative, câte două pentru fiecare conținut, utilizând limbajul științific adecvat. <br/>
             Folosiți, în acest scop, informații referitoare la următoarele conținuturi: <br/>
             - Țesuturile vegetale embrionare <br/>
@@ -118,8 +118,8 @@ export default function Model7() {
 
             2. Organismele vii sunt încadrate în cinci regnuri: Monera, Protiste, Fungi, Plante și Animale. <br/>
             a) Numiți două grupe de vertebrate și câte un exemplu reprezentativ pentru fiecare grupă. <br/>
-            b) Scrieți un argument în favoarea afirmației următoare: „Eubacteriile sunt încadrate în regnul Monera”. <br/>
-            c) Alcătuiți un minieseu intitulat „Regnul Plante”, folosind informația științifică adecvată. În acest scop, respectați următoarele etape: <br/>
+            b) Scrieți un argument în favoarea afirmației următoare: „Eubacteriile sunt încadrate în regnul Monera". <br/>
+            c) Alcătuiți un minieseu intitulat „Regnul Plante", folosind informația științifică adecvată. În acest scop, respectați următoarele etape: <br/>
             - enumerare a șase noțiuni specifice acestei teme; <br/>
             - construirea, cu ajutorul acestora, a unui text coerent, format din maximul trei-patru fraze, folosind corect și în corelație noțiunile enumerate.  <br/>
 
