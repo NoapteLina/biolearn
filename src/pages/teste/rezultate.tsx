@@ -2,28 +2,32 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { API } from './1'
 
 const Results = () => {
   const ansArray = API.getAnswers()
   const intrebari = API.getQuestions()
+  useEffect(() => {
+    console.log("interbaro: ", intrebari);
+    console.log("ansArray:", ansArray);
+  }, [])
   const wrongIndex = new Array(intrebari.length).fill(0)
   let correctAnswers = 0
   let wrongAnswers = 0
-  ansArray.forEach((element) => {
-    if (element === 1) {
-      correctAnswers++
-    } else {
-      wrongAnswers++
-    }
+  intrebari.forEach((element) => {
+    if(element.raspuns == element.input)
+      correctAnswers++;
+    else 
+      wrongAnswers++;
   })
+
   for (let i = 0; i < intrebari.length; i++) {
-    if (ansArray[i] === 0) {
+    if(intrebari[i].input != intrebari[i].raspuns)
       wrongIndex[i] = i + 1
     }
-  }
+  
   const newarr = wrongIndex.filter(a => a !== 0)
   function renderWrongQuestions() {
     return (
@@ -45,7 +49,7 @@ const Results = () => {
                   intrebari[index - 1]?.raspunsuri[
                     intrebari[index - 1]?.input - 1
                   ]
-                } 𐄂
+                } X
               </li>
             </>
           ))}

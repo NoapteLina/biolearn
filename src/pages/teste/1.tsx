@@ -1,10 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-/* eslint-disable import/no-anonymous-default-export */
-/* eslint-disable @typescript-eslint/no-unsafe-return */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { Button, Card } from 'flowbite-react'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
@@ -40,11 +33,15 @@ function shuffleQs(intrebari: test[] ) {
     [intrebari[i].raspunsuri, intrebari[j].raspunsuri] = [intrebari[j]?.raspunsuri, intrebari[i]?.raspunsuri];
   }
   return intrebari
-} //FIXME: STILL NOT FIXED SPEEDY NUB
-// export const API = {
-//   getQuestions: function(){return intrebari},
-//   getAnswers: function(){return ansArray},
-// }
+}
+var g_Intrebari: test[];
+var g_Answers: [];
+
+export const API = {
+   getQuestions: function(){return g_Intrebari},
+   getAnswers: function(){return g_Answers},
+ }
+
 const Test1 = () => {
   
   const [intrebari,setIntrebari] = useState([
@@ -153,12 +150,19 @@ const Test1 = () => {
       'anafază',
     ]),
   ])
-  const ansArray = new Array(intrebari.length).fill(0)
+  const [shouldRender, setRender] = useState(false)
+  const tempAns = new Array(intrebari.length).fill(0);
+  const [ansArray, setAnsarray] = useState(new Array(intrebari.length).fill(0))
   useEffect(() => {
     setIntrebari(shuffleQs(intrebari))
     // intrebari.filter((v,i,a)=>a.findIndex(v2=>['intrebare'].every(k=>v2[k] ===v[k]))===i)
     console.log(intrebari)
+    setRender(true)
+    g_Intrebari = intrebari;
   }, [])
+  useEffect(() => {
+    g_Answers = ansArray;
+  }, [ansArray])
   const router = useRouter()
   let currAns = -1
   const [counter, setCounter] = useState(0)
@@ -173,51 +177,55 @@ const Test1 = () => {
   const submit = () => {
     intrebari[counter].input = currAns
     if (currAns === intrebari[counter]?.raspuns) {
-        ansArray[counter]=1
+        tempAns[counter]=1
     
-    }
+    } 
     setCounter(count=>count+1);
-    document.getElementById(currAns)?.classList.remove('outline') 
+    document.getElementById(currAns.toString())?.classList.remove('outline') 
     if(counter >= intrebari.length - 2) setWord("Finish");
     if (counter == intrebari.length - 2) {
+      setAnsarray(tempAns)
       void router.push('/teste/rezultate')
     }
   }
   function renderQuestions() {
-    return (
-      <>
-        <Card className="max-w-md">
+    if(shouldRender){
+      return (
+        <>
+        <Card className="max-w-sm">
           <h5 className="text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {intrebari[counter]?.intrebare}
           </h5>
           <Card>
             <Button
               pill
-              className="bg-gradient-to-r from-teal-200 to-lime-200 text-gray-900 focus:ring-4 focus:ring-lime-200 enabled:hover:bg-gradient-to-l enabled:hover:from-teal-200 enabled:hover:to-lime-200 enabled:hover:text-gray-900 dark:focus:ring-teal-700"
-              id="1"
+              gradientDuoTone="tealToLime"              id="1"
               onClick={() => activateButton(1)}
             >
               {intrebari[counter]?.raspunsuri[0]}
             </Button>
             <Button
               pill
-              className="bg-gradient-to-r from-teal-200 to-lime-200 text-gray-900 focus:ring-4 focus:ring-lime-200 enabled:hover:bg-gradient-to-l enabled:hover:from-teal-200 enabled:hover:to-lime-200 enabled:hover:text-gray-900 dark:focus:ring-teal-700"
-              id="2"
+              gradientDuoTone="tealToLime"              id="2"
               onClick={() => activateButton(2)}
             >
               {intrebari[counter]?.raspunsuri[1]}
             </Button>
             <Button
+
               pill
-              className="bg-gradient-to-r from-teal-200 to-lime-200 text-gray-900 focus:ring-4 focus:ring-lime-200 enabled:hover:bg-gradient-to-l enabled:hover:from-teal-200 enabled:hover:to-lime-200 enabled:hover:text-gray-900 dark:focus:ring-teal-700"
+              gradientDuoTone="tealToLime"
+              outline
+              style={{fontWeight:"bold"}}
               id="3"
+              
               onClick={() => activateButton(3)}
             >
               {intrebari[counter]?.raspunsuri[2]}
             </Button>
             <Button
               pill
-              className="bg-gradient-to-r from-teal-200 to-lime-200 text-gray-900 focus:ring-4 focus:ring-lime-200 enabled:hover:bg-gradient-to-l enabled:hover:from-teal-200 enabled:hover:to-lime-200 enabled:hover:text-gray-900 dark:focus:ring-teal-700"
+              gradientDuoTone="tealToLime"              
               id="4"
               onClick={() => activateButton(4)}
             >
@@ -229,8 +237,11 @@ const Test1 = () => {
           </Button>
         </Card>
       </>
-    )
+      )
+    }
+      else return(<div>loading</div>)
   }
+  
   return <div>{renderQuestions()}</div>
 }
 export default Test1
