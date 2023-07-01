@@ -15,8 +15,8 @@ import { Icon9 } from './icons/Icon9'
 import { Icon10 } from './icons/Icon10'
 import BioLearnLogo from './icons/logo/BioLearnLogo'
 const products = [
-  { name: 'Clasa a 9-a', description: 'Get a better understanding of your traffic', href: '/9/cuprins', icon: Icon9 },
-  { name: 'Clasa a 10-a', description: 'Speak directly to your customers', href: '#', icon: Icon10 },
+  { name: 'Clasa a 9-a', href: '/9/cuprins', icon: Icon9 },
+  { name: 'Clasa a 10-a',  href: '/10/cuprins', icon: Icon10 },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -31,7 +31,7 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white outline-none	">
+    <header className="outline-none	border-transparent focus:border-transparent focus:ring-0 outline-0	">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1 -m-16 p-8">
             <div className="h-20 w-20">
@@ -51,7 +51,7 @@ export default function Nav() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Product
+              Lecții
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
 
@@ -79,7 +79,6 @@ export default function Nav() {
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -101,18 +100,18 @@ export default function Nav() {
           </Popover>
 
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
+            Teste
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
+            Modele bacalaureat
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
+            Despre
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+            Bibliografie <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -139,7 +138,7 @@ export default function Nav() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Product
+                        Lecții
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
@@ -164,19 +163,19 @@ export default function Nav() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  Teste
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
+                  Modele bacalaureat
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Company
+                  Despre
                 </a>
               </div>
               <div className="py-6">
@@ -184,7 +183,7 @@ export default function Nav() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Bibliografie
                 </a>
               </div>
             </div>

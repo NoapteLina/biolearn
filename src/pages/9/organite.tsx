@@ -250,6 +250,7 @@
 
                         <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
+                        <p className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">NUCLEUL</span> <br/>
                         - Coordonează procesele biologice celulare fundamentale. <br/>
                         - Este prezentat de majoritatea celulelor eucariote. <br/>
@@ -270,8 +271,7 @@
                         <span className="underline decoration-wavy text-green-700">Rol:</span> <br/>
                         - reprezintă centrala informațională și de control a celulei, dar și sediul eredității <br/>
                         - prin conținutul de acizi nucleici, nucleul poartă și transmite informația prin sinteza proteinelor
-
-
+                        </p>
 
                  </div>
              </div>

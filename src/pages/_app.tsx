@@ -10,7 +10,9 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   return(
      <>
      <div className = "">
-        <span className="z-[100]"><Nav/></span>
+        <span className="z-[100] focus:outline-0 focus:outline-none	">
+          <Nav />
+        </span>
         <Component className="" {...pageProps} /> {/** schimbari css globale in className <- */}
         <ScrollToTop style={{display: "flex", justifyContent: "center", alignItems:"center"}} smooth color="green"/>
       </div>

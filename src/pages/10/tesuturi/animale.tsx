@@ -1,56 +1,103 @@
-import React from "react"
-export default function Animale() {
-    return(
-        <>
-        <div className="" >
-            <h1 className=" text-center text-3xl">ȚESUTURI ANIMALE</h1>
-            <div className="mt-4 ml-1">
-                1. Țesuturi epiteliale <br/>
-                <i>a) epitelii de acoperire</i> <br/>
-                - pluristratificate (epiderma, faringe, esofag) <br/>
-                - unistratificate (vilozități intestinale) <br/>
-                - pseudostratificate (mucoasa traheală) <br/>
-                <i>b) epitelii secretoare</i> <br/>
-                - glande endocrine (substanțe), endocrine (hormoni), mixte (ovare, testicule, pancreas) <br/>
-                <i>c) epitelii senzoriale</i> <br/>
-                - intră în alcătuirea organelor de simț <br/>
+ /* eslint-disable @next/next/no-img-element */
+ import React from "react"
+ export default function Animale() {
+     return(
+         <>
+         <div
+         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+         aria-hidden="true"
+     >
+         <div
+             className="relative left-[calc(50%-20rem)] aspect-[1155/678] w-[27.125rem] -translate-x-1 rotate-[30deg] bg-gradient-to-tr from-green-500 to-green-500 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+             style={{
+                 clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
+             }} />
+         </div><div
+             className="absolute inset-x-0 -top-70 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-100"
+             aria-hidden="true"
+     >
+             <div
+                 className="relative left-[calc(50%-11rem)] aspect-[650/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-emerald-300 to-green-900 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                 style={{
+                     clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
+                 }} />
+         </div><div
+             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+             aria-hidden="true"
+         >
+             <div
+                 className="relative right-[calc(0%+11rem)] aspect-[600/600] w-[36.125rem] -translate-x-1/2  rotate-[30deg] bg-gradient-to-tr from-lime-600 to-emerald-950 opacity-30 sm:left-[calc(50%+15rem)] sm:w-[72.1875rem]"
+                 style={{
+                     clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
+                 }} />
+         </div>
+ 
+         <div className=" py-24 sm:py-12">
+             <div className="mx-auto max-w-7xl px-6 lg:px-2">
+                 <div className="mx-auto max-w-7xl lg:mx-0">
+                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Țesuturi animale</h2>
+                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
+ 
+                     <p className="mt-0 text-lg text-grey-600">
+                        <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Țesuturi epiteliale</span> <br/>
+                        <span className="underline decoration-wavy text-green-700">a) epitelii de acoperire</span> <br/>
+                        - pluristratificate (epiderma, faringe, esofag) <br/>
+                        - unistratificate (vilozități intestinale) <br/>
+                        - pseudostratificate (mucoasa traheală) <br/>
+                        <span className="underline decoration-wavy text-green-700">b) epitelii de secreție</span> <br/>
+                        - glande endocrine (substanțe), exocrine (hormoni), mixte (ovare, testicule, pancreas) <br/>
+                        <span className="underline decoration-wavy text-green-700">c) epitelii senzoriale</span> <br/>
+                        - intră în alcătuirea organelor de simț <br/>
+                     </p>
+ 
+                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
+ 
+                     <p className="mt-0 text-lg text-grey-600">
+                        <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Țesuturi conjunctive</span> <br/>
+                        - celule <br/>
+                        - fibre <br/>
+                        - substanța fundamentală <br/>
+                        <span className="underline decoration-wavy text-green-700">a) Țesuturi conjunctive moi</span> <br/>
+                        - leagă între ele diferite părți ale organelor <br/>
+                        - hrănesc și protejează alte țesuturi <br/>
+                        - produc elemente figurate ale sângelui <br/>
+                        <span className="underline decoration-wavy text-green-700">b) Țesuturi conjunctive semidure</span> <br/>
+                        - formeaza cartilaje și nu au vase de sânge <br/>
+                        <span className="underline decoration-wavy text-green-700">c) Țesutul conjunctiv dur (osos)</span> <br/>
+                        - substanța fundamentală este oseina, impregnată cu minerale de Ca și P <br/>
+                        - format din lamele osoase dispuse în două moduri <br/>
+                        <span className="underline decoration-wavy text-green-700">1. Compact</span> <br/>
+                        - dispoziție concentrică, în jurul unor canale microscopice (canale Havers) prevăzute cu nervi și vase de sânge <br/>
+                        <span className="underline decoration-wavy text-green-700">2. Spongios</span> <br/>
+                        - lamelele se întretaie lăsând spații <br/>
+                        - se găsește în epifize și în interiorul oaselor scurte și late <br/>
+                        <span className="underline decoration-wavy text-green-700">d) Țesutul conjunctiv fluid = sângele</span> <br/>
+                     </p>
 
-                2. Țesuturi conjunctive <br/>
-                - celule <br/> 
-                - fibre <br/>
-                - substanța fundamentală <br/>
-                <i>a) Țesuturi conjunctive moi</i> <br/>
-                - leagă între ele diferite părți ale organelor <br/>
-                - hrănesc și protejează alte țesuturi <br/>
-                - produc elemente figurate ale sângelui <br/>
-                <i>b) Țesuturi conjunctive semidure</i> <br/>
-                - formeaza cartilaje și nu au vase de sânge <br/>
-                <i>c) Țesutul conjunctiv dur (osos)</i> <br/>
-                - substanța fundamentală este oseina, impregnată cu minerale de Ca și P <br/>
-                - format din lamele osoase dispuse în două moduri <br/>
-                <span className="underline">1. Compact</span> <br/>
-                - dispoziție concentrică, în jurul unor canale microscopice (canale Havers) prevăzute cu nervi și vase de sânge <br/>
-                <span className="underline">2. Spongios</span> <br/>
-                - lamelele se întretaie lăsând spații <br/>
-                - se găsește în epifize și în interiorul oaselor scurte și late <br/>
-                <i>d) Țesutul conjunctiv fluid = sângele</i> <br/>
+                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                3. Țesutul muscular <br/>
-                - celule alungite = fibre musculare care conțin organite specifice moi = miofibrile cu rol în contracție și relaxare musculară <br/>
-                - poate fi: striat - se află în mușchii scheletici și în musculatura unor organe interne (ex: limba, far inge, prima parte a esofagului), fibrele musculare sunt cilindrice, 
-                polinucleate, au contracții voluntare <br/>
-                - neted - în pereții organitelor interne, fibrele musculare au formă de fus și au nucleu central, au contracții voluntare <br/>
+                    <p className="mt-0 text-lg text-grey-600">
+                        <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Țesutul muscular</span> <br/>
+                        - celule alungite = fibre musculare care conțin organite specifice moi = miofibrile cu rol în contracție și relaxare musculară <br/>
+                        - poate fi: striat - se află în mușchii scheletici și în musculatura unor organe interne (ex: limba, far inge, prima parte a esofagului), fibrele musculare sunt cilindrice, polinucleate, au contracții voluntare <br/>
+                        - neted - în pereții organitelor interne, fibrele musculare au formă de fus și au nucleu central, au contracții voluntare <br/>
+                    </p>
 
-                4. Țesutul nervos <br/>
-                Format din: <br/>
-                - neuroni (celule specializate în generarea și conducerea impulsurilor nervoase) <br/>
-                - celulele gliale (au forme și mărimi variate, susțin și hrănesc neuronii, sintetizează teaca de mielină) <br/>
-                Neuronii sunt alcătuiți din: <br/>
-                - corp celular (={">"} substanța cenușie a sistemului nervos central) <br/>
-                - prelungiri (una sau mai multe dendrite, un axon ={">"} substanța albă a sistemului nervos central) <br/>
-                SINAPSA = legătura dintre neuroni și dintre neuroni și celulele efectoare (musculare și glandulare) 
-            </div>
-        </div>
-        </>
-    )
-}
+                    <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
+
+                    <p className="mt-0 text-lg text-grey-600">
+                        <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Țesutul nervos</span> <br/>
+                        Format din: <br/>
+                        - neuroni (celule specializate în generarea și conducerea impulsurilor nervoase) <br/>
+                        - celulele gliale (au forme și mărimi variate, susțin și hrănesc neuronii, sintetizează teaca de mielină) <br/>
+                        Neuronii sunt alcătuiți din: <br/>
+                        - corp celular (={">"} substanța cenușie a sistemului nervos central) <br/>
+                        - prelungiri (una sau mai multe dendrite, un axon ={">"} substanța albă a sistemului nervos central) <br/>
+                        *Sinapsa = legătura dintre neuroni și dintre neuroni și celulele efectoare (musculare și glandulare) <br/>
+                    </p>
+                 </div>
+             </div>
+         </div>
+         </>
+     )
+ }
