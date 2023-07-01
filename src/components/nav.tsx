@@ -18,10 +18,6 @@ const products = [
   { name: 'Clasa a 9-a', href: '/9/cuprins', icon: Icon9 },
   { name: 'Clasa a 10-a',  href: '/10/cuprins', icon: Icon10 },
 ]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
 
 function classNames(...classes : any[]) {
   return classes.filter(Boolean).join(' ')
@@ -83,18 +79,6 @@ export default function Nav() {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                    >
-                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
               </Popover.Panel>
             </Transition>
           </Popover>
@@ -102,7 +86,7 @@ export default function Nav() {
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Teste
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/bac/model/cuprins" className="text-sm font-semibold leading-6 text-gray-900">
             Modele bacalaureat
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
@@ -144,18 +128,6 @@ export default function Nav() {
                           aria-hidden="true"
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
-                          <Disclosure.Button
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </Disclosure.Button>
-                        ))}
-                      </Disclosure.Panel>
                     </>
                   )}
                 </Disclosure>
