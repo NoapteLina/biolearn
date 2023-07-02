@@ -47,7 +47,7 @@ let g_Intrebari: test[]
 let g_Answers: []
 let usedSet: number
 
-export const API_1 = {
+export const API_2 = {
   getQuestions: function () {
     return g_Intrebari
   },
@@ -59,112 +59,112 @@ export const API_1 = {
   },
 }
 
-const Test1 = () => {
+const Test2 = () => {
   const [usedTSet, setUsedSet] = useState(0)
   const [intrebari, setIntrebari] = useState([
-    new test('Cel mai lung segment al tubului digestiv este:', 3, -1, [
-      'faringele',
-      'esofagul',
-      'intestinul subțire',
-      'intestinul gros',
+    new test('Celule fotosensibile conține:', 1, -1, [
+      'retina',
+      'sclerotica',
+      'coroida',
+      'pupila',
     ]),
 
-    new test('Lizozomii:', 2, -1, [
-      'sunt alcătuiți din ARN și enzime ',
-      'au rol în digestia intracelulară',
-      'sunt canalicule intracitoplasmatice',
-      'au, la periferie, o membrană dublă',
+    new test('Albinismul este o maladie:', 4, -1, [
+      'heterozomală',
+      'dominantă',
+      'genomică',
+      'autozomală',
     ]),
 
-    new test('Este o lege mendeliană a eredității', 4, -1, [
-      'polenizarea încrucișată a plantelor hibride din prima generație',
-      'schimbul reciproc de gene între cromozomii pereche',
-      'impuritatea gameților din prima generație',
-      'segregarea independentă a perechilor de caractere',
+    new test('Anafaza mitotică se caracterizează prin:', 2, -1, [
+      'formarea membranei nucleare',
+      'migrarea cromozomilor monocromatidici spre poli',
+      'dezorganizarea fusului de diviziune',
+      'individualizarea cromozomilor bicromatidici',
     ]),
 
-    new test('Respirația branhială este caracteristică', 4, -1, [
-      'delfinilor',
-      'focilor',
-      'balenelor',
-      'guvizilor',
+    new test(
+      'Din categoria țesuturilor embrionare fac parte țesuturile',
+      2,
+      -1,
+      ['secretoare', 'apicale', 'conductoare', 'de apărare']
+    ),
+
+    new test('Neuroni senzitivi cu rol de receptori se găsesc în:', 2, -1, [
+      'mugurele gustativ',
+      'epiteliul olfactiv',
+      'coroida',
+      'melcul membranos',
     ]),
 
-    new test('Mamiferele au:', 3, -1, [
-      'inima tetracamerală',
-      'rinichi lipsiți de glomeruli',
-      'plămâni cu alveole pulmonare',
-      'cavitate buco-faringiană',
+    new test('Sunt talofite:', 1, -1, [
+      'briofitele',
+      'pterodofitele',
+      'gimnospermele',
+      'angiospermele',
     ]),
 
-    new test('Structura diencefalică este:', 4, -1, [
-      'bulbul rahidian',
-      'hipotalamusul',
-      'puntea lui Varolio',
-      'cerebelul',
+    new test('În procesul de fermentație lactică se oxidează', 1, -1, [
+      'glucoza',
+      'acidul lactic',
+      'alcoolul etilic',
+      'acidul acetic',
     ]),
 
-    new test('Ribozomul:', 1, -1, [
-      'este format dintr-o subunitate mare și una mică',
-      'prezintă la periferie o membrană dublă',
-      'este alcătuit din canalicule intracitoplasmatice',
-      'cuprinde un număr mare de centrioli',
+    new test('Conțin enzime oxido-reducătoare', 4, -1, [
+      'centrozomii',
+      'vacuolele',
+      'ribozomii',
+      'mitocondriile',
     ]),
 
-    new test('Nutriția autotrofă:', 2, -1, [
-      'se realizează prin preluare substanțelor organice din mediu',
-      'este caracteristică organismelor fotosintetizatoare',
-      'produce substanțe anorganice necesare hrănirii animalelor',
-      'este realizată saprofit sau parazit de către bacterii și ciuperci',
+    new test('Orientarea frunzelor către lumină reprezintă:', 3, -1, [
+      'o fotonastie',
+      'o termonastie',
+      'un fototropism',
+      'un fototactism',
     ]),
 
-    new test('Mișcarea neorientată a unui organ al plantei este:', 2, -1, [
-      'hidrotropismul',
-      'seismonastia',
-      'chimiotactismul',
-      'geotropismul',
+    new test('Aparține artropodelor:', 1, -1, [
+      'racul',
+      'hidra',
+      'râma',
+      'meduza',
     ]),
 
-    new test('Individualizarea cromozomilor are loc în:', 2, -1, [
-      'telofază',
-      'profază',
-      'metafază',
-      'anafază',
+    new test(
+      'Regiunea de digestie chimică finală a alimentelor este reprezentată de:',
+      2,
+      -1,
+      ['cavitatea bucală', 'intestinul subțire', 'stomac', 'intestinul gros']
+    ),
+
+    new test('Nucleoidul:', 3, -1, [
+      'este un organ cu rol în respirația celulei procariote',
+      'este alcătuit dintr-o moleculă de ARN circulară',
+      'reprezintă genomul bacterian',
+      'se află în interiorul nucleului la eucariote',
     ]),
 
-    new test('Structură a trunchiului cerebral este:', 2, -1, [
-      'bulbul rahidian',
-      'hipotalamusul',
-      'vermisul',
-      'cerebelul',
+    new test('HCl din sucul gastric', 3, -1, [
+      'hidrolizează glucidele',
+      'coagulează/încheagă laptele',
+      'împiedică dezvoltarea germenilor',
+      'emulsionează lipazele',
     ]),
 
-    new test('Aparatul Golgi:', 2, -1, [
-      'este format dintr-o subunitate mare și una mică',
-      'prezintă la periferie o membrană  simplă',
-      'conține enzime cu rol în digestia intracelulară',
-      'cuprinde la interior acizi nucleici și ribozomi',
+    new test('În procesul de fermentație alcoolică se oxidează:', 4, -1, [
+      'alcoolul etilic',
+      'aminoacizii',
+      'acidul acetic',
+      'glucoza',
     ]),
 
-    new test('Nutriția heterotrofă:', 4, -1, [
-      'se realizează prin prelucrarea substanțelor anorganice din mediu',
-      'este caracteristică tuturor organismelor fotosintetizante',
-      'asigură formarea substanțelor anorganice necesare hrănirii animalelor',
-      'este realizata saprofit sau parazit de către bacterii și ciuperci',
-    ]),
-
-    new test('Mișcarea orientată a unei celule mobile este:', 3, -1, [
-      'hidrotropismul',
-      'seismonastia',
-      'chimiotactismul',
-      'geotropismul',
-    ]),
-
-    new test('Cromozomii se despiralează în:', 1, -1, [
-      'telofază',
-      'profază',
-      'metafază',
-      'anafază',
+    new test('Măduva spinării prezintă:', 3, -1, [
+      'nuclei somatici la exterior',
+      'substanță albă la interior',
+      'fascicule de substanță albă la periferie',
+      'substanță cenușie la exterior',
     ]),
   ])
   const [shouldRender, setRender] = useState(false)
@@ -202,7 +202,8 @@ const Test1 = () => {
     setUsedSet(1)
     setCounter((count) => count + 1)
     document.getElementById(currAns.toString())?.classList.remove('outline')
-    if (counter >= intrebari.length - 2) setWord('Finish')
+    if (counter >= intrebari.length - 2) {setWord('Finish')
+    console.log(usedSet)}
     if (counter == intrebari.length - 1) {
       setAnsarray(tempAns)
       setRender(false)
@@ -257,9 +258,9 @@ const Test1 = () => {
           </Card>
         </>
       )
-    } else return <div>loading</div>
+    } else return <div></div>
   }
 
   return <div>{renderQuestions()}</div>
 }
-export default Test1
+export default Test2 
