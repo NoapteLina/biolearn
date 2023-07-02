@@ -1,7 +1,9 @@
  /* eslint-disable @next/next/no-img-element */
  /* eslint-disable react/no-unescaped-entities */
  import React from "react"
+ import { useRouter } from "next/router";
  export default function Model() {
+    const router = useRouter();
      return(
          <>
          <div
@@ -218,16 +220,25 @@
                         Fotosinteza constă în procesul de sinteză a substanțelor organice pornind de la apă și săruri minerale, folosind energia luminoasă, dioxidul de carbon din atmosferă, cu eliminare de O2. Se desfășoară în structuri specializate numite <span className="underline decoration-double text-green-700">cloroplaste</span>, unde se găsesc pigmenții clorofilieni care absorb energia luminoasă. Fotosinteza are două etape: <span className="underline decoration-double text-green-700">faza de lumină</span>, are loc în <span className="underline decoration-double text-green-700">grana</span> cloroplastelor, <span className="underline decoration-double text-green-700">clorofila</span> absoarbe energia luminoasă pe care o înglobează în molecule de <span className="underline decoration-double text-green-700">ATP</span>, și <span className="underline decoration-double text-green-700">faza de întuneric</span>, care are loc în stroma cloroplastelor și constă în sinteza substanțelor organice, folosind energia chimică înglobată în ATP. Fotosinteza reprezintă unul dintre cele mai importante procese din natură, pentru că: este o sursă importantă de substanțe organice, hrană pentru organismele heterotrofe din ecosistem, influențează producția agricolă și silvică, menține constantă compoziția atmosferei în echilibru cu respirația organismelor și arderile (se produce oxigen și se utilizează CO2).
                      </p>
 
-                        <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
+                    <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                        <p className="mt-0 text-lg text-grey-600">
-                            <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Observație!</span> Toate sublinierile sau culorile sunt folosite în scopul evidențierii răspunsurilor corecte pentru a înțelege mai ușor, la examenul de bacalaureat NU FOLOSIM CULORI sau SUBLINIERI.<br/>
-                        </p>
+                    <p className="mt-0 text-lg text-grey-600">
+                        <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Observație!</span> Toate sublinierile sau culorile sunt folosite în scopul evidențierii răspunsurilor corecte pentru a înțelege mai ușor, la examenul de bacalaureat NU FOLOSIM CULORI sau SUBLINIERI.<br/>
+                    </p>
                  </div>
              </div>
          </div>
          
-                    
+        <div className="flex justify-center">
+        <span onClick={()=> void router.push('/bac/model/5')} className="inline-flex items-center px-4 py-2 mr-3 mb-8 text-sm font-medium text-lime-500 bg-white border border-lime-500 rounded-lg hover:bg-lime-500 hover:text-white dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+        <svg aria-hidden="true" className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+        Modelul anterior 
+        </span>
+        <span onClick={()=> void router.push('/bac/model/7')} className="inline-flex items-center px-4 py-2 mb-8 text-sm font-medium text-lime-500 bg-white border border-lime-500 rounded-lg hover:bg-lime-500 hover:text-white dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+        Următorul model 
+        <svg aria-hidden="true" className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </span>
+        </div>           
  
          </>
      )

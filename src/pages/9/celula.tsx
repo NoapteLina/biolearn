@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 import React from "react"
 import { useRouter } from "next/router";
 export default function Celula() {
@@ -41,6 +42,8 @@ export default function Celula() {
               <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none">
                 <p className="mt-0 text-lg text-gray-600">
                 <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Definiție: </span> Celula este unitatea de bază, strcturală, funcțională și genetică a unui organism. <br/>
+                <Image src="" width={500} height={500} alt="Picture of the author"/>
+
                 </p>
                 </div>
               <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-16 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none">
@@ -90,8 +93,8 @@ export default function Celula() {
 
 
           <div className="flex justify-center">
-          <span onClick={()=> void router.push('/9/eucariota')} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-            Next
+          <span onClick={()=> void router.push('/9/eucariota')} className="inline-flex items-center px-4 py-2 mb-8 text-sm font-medium text-lime-500 bg-white border border-lime-500 rounded-lg hover:bg-lime-500 hover:text-white dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+            Următoarea lecție
             <svg aria-hidden="true" className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
           </span>
           </div>

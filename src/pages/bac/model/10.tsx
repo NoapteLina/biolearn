@@ -1,7 +1,9 @@
  /* eslint-disable @next/next/no-img-element */
  /* eslint-disable react/no-unescaped-entities */
  import React from "react"
+ import { useRouter } from "next/router";
  export default function Model() {
+    const router = useRouter();
      return(
          <>
          <div
@@ -240,20 +242,27 @@
                         <br/>
                         Mutațiile <span className="underline decoration-double text-green-700">genetice</span> se clasifică după mai multe criterii, dintre care: după tipul de celulă afectată, mutațiile pot fi <span className="underline decoration-double text-green-700">gametice</span>, care se transmit ereditar. După structura genetică afectată, mutațiile pot fi genice, când afectează una sau mai multe gene, mutații cromozomale, care duc la apariția unor cromozomi restructurați, și mutații genomice, care afectează întreg <span className="underline decoration-double text-green-700">genomul</span>. <br/>
                         După tipul de <span className="underline decoration-double text-green-700">cromozomi</span> afectați, mutațiile genetice pot fi <span className="underline decoration-double text-green-700">autozomale</span>, care se transmit uniform la descendenți, și <span className="underline decoration-double text-green-700">heterozomale</span>, care se transmit cu o frecvență mai mare la unul dintre sexe.
-
-
                      </p>
 
-                        <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
+                    <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                        <p className="mt-0 text-lg text-grey-600">
-                            <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Observație!</span> Toate sublinierile sau culorile sunt folosite în scopul evidențierii răspunsurilor corecte pentru a înțelege mai ușor, la examenul de bacalaureat NU FOLOSIM CULORI sau SUBLINIERI.<br/>
-                        </p>
+                    <p className="mt-0 text-lg text-grey-600">
+                        <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Observație!</span> Toate sublinierile sau culorile sunt folosite în scopul evidențierii răspunsurilor corecte pentru a înțelege mai ușor, la examenul de bacalaureat NU FOLOSIM CULORI sau SUBLINIERI.<br/>
+                    </p>
                  </div>
              </div>
          </div>
          
-                    
+        <div className="flex justify-center">
+        <span onClick={()=> void router.push('/bac/model/9')} className="inline-flex items-center px-4 py-2 mr-3 mb-8 text-sm font-medium text-lime-500 bg-white border border-lime-500 rounded-lg hover:bg-lime-500 hover:text-white dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+        <svg aria-hidden="true" className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+        Modelul anterior
+        </span>
+        <span onClick={()=> void router.push('/bac/model/cuprins')} className="inline-flex items-center px-4 py-2 mb-8 text-sm font-medium text-lime-500 bg-white border border-lime-500 rounded-lg hover:bg-lime-500 hover:text-white dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+        Cuprins 
+        <svg aria-hidden="true" className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </span>
+        </div>     
  
          </>
      )
