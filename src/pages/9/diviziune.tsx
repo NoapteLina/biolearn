@@ -1,5 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
  import React from "react"
+ import Image from "next/image"
  import { useRouter } from "next/router";
  export default function Diviziune() {
     const router = useRouter();
@@ -40,13 +41,13 @@
                      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Diviziunea celulară</h2>
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600 text-center">
+                     <div className="mt-0 text-lg text-grey-600 text-center">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Definiție: </span>Diviziunea celulară reprezintă înmulțirea celulelor: directă sau indirectă (mitoza și meioza). <br/>
-                     </p>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Diviziunea directă (=Amitoza)</span> <br/>
                          X - specifică: <br/>
                         - Procariotă <br/>
@@ -60,24 +61,30 @@
                         <span className="underline decoration-wavy text-green-700">b. Strangulare </span> <br/>
                         - nucleul se alungește și se fragmentează =&gt; 2 celule fiice <br/>
                         - la bacterii <br/>
-                     </p>
+                        <div className="flex justify-center -mt-72 ml-[60%]">
+                            <Image src="/images/amitoza.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Diviziunea indirectă (=Cariochineza)</span> <br/>
                          - presupune diviziunea nucleului = cariochineza și diviziunea citoplasmei = citochineza <br/>
                         - este prezentă la eucariote <br/>
                         - poate fi diviziune mitotică sau meiotică <br/>
-                     </p>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600 text-right">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Ciclul celular</span> <br/>
                          - diviziunea este un fenomen ciclic <br/>
                          Ciclul celular = ansamblu de transport care se produce din momentul formării celulei și până în momentul unei noi diviziuni <br/>
-                     </p>
+                         <div className="flex justify-start -mt-24">
+                            <Image src="/images/ciclul-celular.jpg" width={250} height={250} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
                      
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  

@@ -40,9 +40,9 @@
                      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Mitoza</h2>
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600 text-center">
+                     <div className="mt-0 text-lg text-grey-600 text-center">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Definiție: </span> Este procesul de diviziune prin care dintr-o celulă cu set diploid de cromozomi rezultă două celule-fiice, tot diploide, identice din punct de vedere ereditar. <br/>
-                     </p>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  

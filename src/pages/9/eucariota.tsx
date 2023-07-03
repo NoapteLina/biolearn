@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react"
+import Image from 'next/image'
 import { useRouter } from "next/router";
 export default function Eucariota() {
     const router = useRouter();
@@ -40,57 +41,61 @@ export default function Eucariota() {
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Celula eucariotă</h2>
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Localizare: </span> O regăsim la 4 regnuri: Protista, Fungi, Plante și Animale. <br/>
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Componente:</span> <br/>
                         - membrană celulară <br/>
                         - citoplasmă <br/>
                         - nucleu <br/>
-                    </p>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         Celula eucariotă se împarte în: <br/>
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Celula vegetală: </span>perete celular, plastide, vacuole mari și permanente. <br/>
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Celula animală: </span>nu are perete celular, nu are plastide, vacuole mici și temporare. <br/>
-                    </p>
+                        <div className="flex justify-end -mt-32">
+                            <Image src="/images/celula-vegetala.png" width={250} height={250} alt="Picture of the author" className="rounded-lg"/>
+                            <Image src="/images/celula-animala.png" width={450} height={250} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Clasificarea organitelor:</span> <br/>
                         - cu membrană dublă: nucleu, plastide, mitocondrii <br/>
                         - cu membrană simplă: restul organitelor <br/>
                         - fără membrană: ribozomi, centrozomi <br/>
-                    </p>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Componente arevii:</span> <br/>
                         Protoplastul reprezintă centrul celulei eucariote. <br/>
                         Componente arevii: perete celular, vacuole, incluziuni ergastice. <br/>
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Componente vii (protoplasmatice):</span> <br/>
                         - restul 
-                    </p>
+                    </div>
                     
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         Celulele eucariote, vegetale și animale, sunt celule tipice care au o structură similară, însă prezintă anumite particularități. <br/>
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold"> Celula eucariotă vegetală </span> conține plastide, una sau mai multe vacuole permanente și un perete celular de natură celulozică. <br/>
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Celula eucariotă animală:</span> <br/>
                         - este lipsită de plastide <br/>
                         - are o formațiune numită centrozom <br/>
                         - vacuolele sunt structuri temporare, și atunci când există au dimensiuni foarte mici <br/>
-                    </p>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         Celulele eucariote vegetale și animale sunt foarte diferite ca mărime, formă și funcțiune. <br/>
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>

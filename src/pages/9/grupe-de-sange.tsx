@@ -1,5 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
  import React from "react"
+ import Image from "next/image"
  import { useRouter } from "next/router";
  export default function Sange() {
     const router = useRouter();
@@ -49,12 +50,16 @@
                      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Grupe de sânge. Determinismul cromozomilor sexelor. Influența mediului asupra eredității</h2>
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Grupe de sânge </span>  <br/>
                             - Există 4 grupe de sânge, determinate de prezența sau absența antigenilor A și B de pe suprafața hematiilor. <br/>
                             - În plasmă există anitcorpi pentru aceste antigene, anticorpi anti A și anticorpi anti B. <br/>
                             - Anticorpii nu trebuie să intre în contacr cu antigena, pentru că produc distrugerea hematiei (pot produce moartea). De aceea, este foarte important să cunoaștem grupa de sânge pentru o eventuală transfuzie. <br/>
-                     </p>
+                        <div className="flex justify-center mt-10">
+                            <Image src="/images/sange.png" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                            <Image src="/images/sange2.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  

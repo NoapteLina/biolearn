@@ -1,5 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
  import React from "react"
+ import Image from "next/image"
  import { useRouter } from "next/router";
  export default function Genetica() {
     const router = useRouter();
@@ -40,7 +41,7 @@
                      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Genetica umană</h2>
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Maladii metabolice (=genice)</span>  <br/>
                          Sunt determinate de mutații ale genelor. <br/>
                          a. Autozomale - apar prin mutația unor gene localizate în autozomi  <br/>
@@ -60,7 +61,14 @@
                          Daltonismul <br/>
                          - este o boală ereditară determinată de gena recisivă plasată pe cromozomul X <br/>
                         - cei afectați nu pot distinge culorile, cu precădere roșul de verde (sunt în special de sex masculin) <br/>
-                     </p>
+                        <div className="flex justify-end mr-[9%]">
+                            <Image src="/images/albinism.jpg" width={200} height={200} alt="Picture of the author" className="rounded-lg"/>
+                            <Image src="/images/polidactilia.jpeg" width={200} height={200} alt="Picture of the author" className="rounded-lg"/>
+                            <Image src="/images/sindonctilia.jpeg" width={200} height={200} alt="Picture of the author" className="rounded-lg"/>
+                            <Image src="/images/daltonism.jpg" width={200} height={200} alt="Picture of the author" className="rounded-lg"/>
+                            <Image src="/images/prognatism.jpeg" width={200} height={200} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  

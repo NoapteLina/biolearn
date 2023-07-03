@@ -1,5 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
  import React from "react"
+ import Image from 'next/image'
  import { useRouter } from "next/router";
  export default function Organite() {
      const router = useRouter();
@@ -40,13 +41,13 @@
                      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Organite celulare - Nucleul</h2>
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600 text-center">
+                     <div className="mt-0 text-lg text-grey-600 text-center">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Definiție: </span> Organitele celulare sunt subunități specializate ale celulei, ce prezintă funcții specifice.<br/>
-                     </p>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">RETICULUL ENDOPLASMATIC</span> <br/>
                          <span className="underline decoration-wavy text-green-700">Structura: </span> <br/>
                          Este un sistem de canalicule ramificate ce fac legătura dintre membrana celulară și membrana nucleară. <br/>
@@ -59,11 +60,14 @@
                          - transportul substanțelor  <br/>
                          - sinteza lipidelor și a proteinelor <br/>
                          - compartimentarea celulei <br/>
-                     </p>
+                         <div className="flex justify-end -mt-64">
+                            <Image src="/images/reticulul-endoplasmatic.png" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600 text-right">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">DICTIOZOMII (=aparatul Golgi)</span> <br/>
                          - Sunt săculeți care prezintă la capete vezicule mici (microvezicule) sau mari (macrovezicule). <br/>
                          <span className="underline decoration-wavy text-green-700">Rol:</span> <br/>
@@ -71,11 +75,14 @@
                          - sinteza polizaharidelor <br/>
                          - prelucrează, stochează proteine și lipide <br/>
                          - formarea peretelui celular  <br/>
-                     </p>
+                         <div className="flex justify-start -mt-64">
+                            <Image src="/images/golgi.png" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">LIZOZOMII</span> <br/>
                          <span className="underline decoration-wavy text-green-700">Structura:</span> <br/>
                          - Sunt corpusculi sferici. <br/>
@@ -85,11 +92,14 @@
                          - asigură digestia intracelulară <br/>
                          - sunt măturătorii celulelor <br/>
                          - distrug particulele străine, substanțe, fragmente  de țesuturi și celule deteriorate <br/>
-                     </p>
+                         <div className="flex justify-center -mt-64 ml-[55%]">
+                            <Image src="/images/lizozom.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
                      
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600 text-right">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">RIBOZOMII (=granulele, corpusculii lui Palade)</span> <br/>
                          - Sunt organite celulare lipsite de membrană celulară. <br/>
                          <span className="underline decoration-wavy text-green-700">Structura:</span> <br/>
@@ -98,11 +108,14 @@
                          - Conțin două subunități: mare și mică.<br/>
                          <span className="underline decoration-wavy text-green-700">Rol:</span> <br/>
                             - sinteza proteinelor <br/>
-                     </p>
+                        <div className="flex justify-start -mt-48">
+                            <Image src="/images/ribozomi2.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
 
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">VACUOLELE</span> <br/>
                         - Totalitatea vacuolelor formează vacuomul. <br/>
                         - Membrana vacuolelor se numeșre tonoplast. <br/>
@@ -114,11 +127,14 @@
                         - circulația apei  <br/>
                         - eliminarea deșeurilor celulare <br/>
                         - la animale: vacuole digestive <br/>
-                     </p>
+                        <div className="flex justify-center -mt-64 ml-[55%]">
+                            <Image src="/images/vacuola.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
 
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600 text-right">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">CENTROZOMUL (=centrul celular)</span> <br/>
                         - Se găsește la celulele animale și fungi. <br/>
                         - Lipsește la neuroni. <br/>
@@ -126,7 +142,10 @@
                         <span className="underline decoration-wavy text-green-700">Rol:</span> <br/>
                         - diviziunea celulară <br/>
                         - formarea fusului de diviziune
-                     </p>
+                        <div className="flex justify-start -mt-48">
+                            <Image src="/images/centroozom.png" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
 
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
@@ -134,35 +153,45 @@
 
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">1. NEUROFIBRILELE SAU CORPUSCULII NISSL</span> <br/>
                         - Sunt organite specifice neuronilor. <br/>
                         <span className="underline decoration-wavy text-green-700">Rol:</span> <br/>
                         - mecanic <br/>
                         - de susținere <br/>
                         - de conducere a impulsului nervos <br/>
-                    </p>
+                        <div className="flex justify-center -mt-48 ml-[70%]">
+                            <Image src="/images/neurofibrile.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600 text-right">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">2. MIOFIBRILELE</span> <br/>
                         - Sunt organite specifice fibrelor musculare. <br/>
                         - Reprezintă elementele contractile ale fibrelor musculare. <br/>
-                    </p>
+                        <div className="flex justify-start -mt-24">
+                            <Image src="/images/miofibrile.webp" width={300} height={250} alt="Picture of the author" className="rounded-lg"/>
+                            <Image src="/images/miofibrile2.jpg" width={300} height={250} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                       <span className="underline decoration-wavy text-[#65a30d] font-extrabold">3. CILII ȘI FLAGELII</span> <br/>
                       Apar la organitele unicelulare și reproducătoare: <br/>
                       - asexuate: zoospori <br/>
                       - sexuate: zoogameți <br/>
-                    </p>
+                      <div className="flex justify-center -mt-32 ml-[60%]">
+                        <Image src="/images/cili-flageli.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                      </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600 text-right">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">MITOCONDRIILE</span> <br/>
                         - Sunt organite celulare cu membrană dublă. <br/>
                         - Sunt autodivizibile. <br/>
@@ -188,11 +217,14 @@
                         <span className="underline decoration-wavy text-green-700">Respirația celulară în mitocondrie:</span> <br/>
                         - prezența O2 rezultă energie multă (36 moli ATP) <br/>
                         - arderea totală rezultă produși finali     
-                    </p>
+                        <div className="flex justify-start -mt-48">
+                            <Image src="/images/mitocondria.png" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">PLASTIDELE</span> <br/>
                         - Sunt organite celulare cu membrană dublă. <br/>
                         - Sunt autodivizibile. <br/>
@@ -205,11 +237,11 @@
                         <span className="underline decoration-wavy text-green-700">Tipuri funcționale de plastide:</span> <br/>
                         Cloroplaste - sunt verzi și realizează fotosinteza <br/>
                         Cromoplaste - conțin pigmenți: roșii, galbeni, portocalii (carotenoizi) <br/>
-                    </p>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">LEUCOPLASTELE</span> <br/>
                         - Sunt incolore, lipsite de pigmenți. <br/>
                         - Se găsesc în porțiunile albicioase ale tulpinilor și frunzelor. <br/>
@@ -220,11 +252,11 @@
                         G = amidon = amiloplaste <br/>
                         L = oleoplaste <br/>
                         P = proteoplaste 
-                    </p>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">CLOROPLASTUL</span> <br/>
                         <span className="underline decoration-wavy text-green-700">Structura:</span> <br/>
                         - membrană externă <br/>
@@ -248,7 +280,10 @@
                         - se realizează în stroma cloroplastului <br/>
                         - se reduce dioxidul de carbon <br/>
                         - se formează SO <br/>
-                    </p>
+                        <div className="flex justify-center -mt-72 ml-[60%]">
+                            <Image src="/images/cloroplast.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                         <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 

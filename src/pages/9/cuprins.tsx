@@ -1,8 +1,8 @@
 'use client';
-import { Button, Card } from 'flowbite-react';
+import { Button, Tooltip } from 'flowbite-react';
 import React from "react";
 import { useRouter } from "next/router";
-import BioLearnLogo from "~/components/icons/logo/BioLearnLogo";
+import { InformationCircleIcon } from '@heroicons/react/24/outline';
 function Cuprins (){
     const router = useRouter()
     return (
@@ -185,23 +185,23 @@ function Cuprins (){
             </ol>
             
            
-            <div className="max-w-sm p-6 bg-gradient-to-tr from-lime to-lime-200 border border-green-500 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-[36%] mt-[12%]">
+            <div className="max-w-sm p-6 bg-gradient-to-tr from-lime to-lime-200 border border-green-500 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-[36%] mt-[13%]">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Lecții clasa a 9-a</h5>
-                <p className="mb-3 font-normal text-black-700 dark:text-gray-400 text-justify">
+                {/* <p className="mb-3 font-normal text-black-700 dark:text-gray-400 text-justify">
                 - Pentru a deschide pagina cu lecția pe care doriți să o accesați, apăsați pe iconița din dreptul lecției sau chiar pe titlul acesteia (ex: Lecția 1), după cum vă este mai ușor, și veți fi redirecționați către pagina cu lecția respectivă. <br/>
-                </p>
-                <p className="mb-3 font-normal text-black-700 dark:text-gray-400 text-justify">
+                </p> */}
+                <Tooltip className = "w-96" content="Pentru a deschide pagina cu lecția pe care doriți să o accesați, apăsați pe iconița din dreptul lecției sau chiar pe titlul acesteia (ex: Lecția 1), după cum vă este mai ușor, și veți fi redirecționați către pagina cu lecția respectivă."
+                style="light"
+                ><InformationCircleIcon className="w-8 h-8 -mt-10"/></Tooltip>
+                <p className="mb-3 mt-8 font-normal text-black-700 dark:text-gray-400 text-justify">
                 - Dacă vreți să schimbați clasa sau să alegeți altă categorie deoarece ați terminat lecțiile, doar apăsați butonul acasă. <br/>
                 </p>
-                <Button  className="w-80" gradientDuoTone="greenToBlue"
-                pill
+                <Button  className="w-80 rounded-lg mt-6" gradientDuoTone="greenToBlue" 
                 onClick={() => void router.push('/#')}>
                     Acasă
                     <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </Button>
             </div>
-
-
         </>
         
     )

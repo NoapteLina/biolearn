@@ -1,5 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
 import React from "react"
+import Image from 'next/image'
 import { useRouter } from "next/router";
 export default function Citoplasma() {
     const router = useRouter();
@@ -40,43 +41,49 @@ export default function Citoplasma() {
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Citoplasma (=citosol)</h2>
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600 text-center">
+                    <div className="mt-0 text-lg text-grey-600 text-center">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Definiție: </span> Citoplasma este un lichid vâscos, incolor, transparent, care umple spațiul dintre membrana celulară și nucleu. <br/>
-                    </p>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">CITOPLASMA</span> <br/>
                         - Este masa fundamentală a celulei care umple spațiul dintre membrana celulară și membrana nucleară. <br/>
                         - Prezintă curenți citoplasmatici. <br/>
                         - Se găsește într-o continuă mișcare, antrenând și organitele celulare cum ar fi: mitocondriile și cloroplastele. <br/>
                         - Este formată din două părți: hialoplasma și citocheletul. <br/>
-                    </p>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600 text-right">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">HIALOPLASMA</span> <br/>
                         - Este un lichid vâscos, incolor, semitransparent. <br/>
                         - Este un sistem coloidal format din coloizi (micele). <br/>
                         *coloizi = mici particule ce se găsesc într-o continuă mișcare browniană  <br/>
                         - Ea pendulează între două stări reversibile: plasmasol (starea lichidă) și plasmagel (starea solidă). <br/>
-                    </p>
+                        <div className="flex justify-start -mt-32">
+                            <Image src="/images/hialoplasma.webp" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">CITOSCHELETUL</span> <br/>
                         - Determină arhitectura celulei. <br/>
                         - Este reprezentat de molecule proteice dispuse sub formă de rețea tridimensională pe care se dispun organitele celulare. <br/>
-                    </p>
+                        <div className="flex justify-end -mt-24">
+                            <Image src="/images/citoscheletul.jpg" width={200} height={200} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
                     
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         La nivelul citoplasmei se realizează principalele procese metabolice. <br/>
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>

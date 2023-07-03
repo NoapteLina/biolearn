@@ -1,5 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
  import React from "react"
+ import Image from "next/image"
  import { useRouter } from "next/router";
  export default function Plante() {
     const router = useRouter();
@@ -46,7 +47,7 @@
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Sunt grupate în:</span> <br/>
                          <span className="underline decoration-wavy text-green-700">1. Plante avasculare </span>(fără vase conducătoare liberiene și lemnoase și organe vegetative diferențiate). <br/>
                          - Corpul lor se numește tal (talofite). <br/>
@@ -56,7 +57,11 @@
                         - încrengătura rhooopphita - roșii: Porphura sp <br/>
                         - încrengătura phaeophita - brune: Laminaria sp <br/>
                         <span className="underline decoration-wavy text-green-700">b. Mușchii (=briofite) </span> <br/>
-                     </p> 
+                        <div className="flex justify-center -mt-32 ml-[45%]">
+                            <Image src="/images/matasea-broastei.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                            <Image src="/images/laminaria-sp.png" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div> 
             
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
@@ -69,7 +74,7 @@
                      
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Lichenii</span> <br/>
                         - Nu fac parte dintr-o grupă sistematică aparte. <br/>
                         - Reprezintă o simbioză (=asociere între două specii care este bazată pe ajutor reciproc) <br/>
@@ -84,12 +89,15 @@
                         - constituie hrană pentru animale <br/>
                         - eliberează acizi care corodează piatra, participând astfel la degradarea stâncilor <br/>
                         - formează primul strat de sol <br/>
-                        - din unele specii se obține glucoza medicinală, turmesolul, sau medicamente pentru tratarea bronșitei, hepatitei
-                     </p>
+                        - din unele specii se obține glucoza medicinală, turmesolul, sau medicamente pentru tratarea bronșitei, hepatitei <br/>
+                        <div className="flex justify-end -mt-64 ml-[60%]">
+                            <Image src="/images/licheni.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
 
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Mușchii</span> <br/>
                         <span className="underline decoration-wavy text-green-700">Caracteristici:</span> <br/>
                         - sunt răspândiți pe toată suprafața pământului, în locuri umbroase și netede <br/>
@@ -127,7 +135,10 @@
                         - aranjamente florale <br/>
                         - aranjamente florale <br/>
                         - împreună cu lichenii îngroașă pătura de sol de pe substrat <br/>
-                     </p>
+                        <div className="flex justify-start -mt-[0%]">
+                            <Image src="/images/muschi.jpg" width={450} height={350} alt="" className="rounded-lg"/>
+                        </div>
+                     </div>
 
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
@@ -174,7 +185,7 @@
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Angiosperme</span> <br/>
                         <span className="underline decoration-wavy text-green-700">Definiție:</span> Sunt plantele care au ovulele închise în ovar și, în urma fecundației sămânța este închisă în fruct. <br/>
                         - Sunt plante superioare, răspândite pe tot globul. <br/>
@@ -201,7 +212,7 @@
                         - Angiospermele formează, alături de gimnosperme, majoritatea covârșitoare a vegetației, cu rol important în circuitul dioxidului de carbon și al oxigenului în natură. <br/>
                         - Constituie principalii producători din majoritatea ecosistemelor terestre. <br/>
                         - Numeroase specii sunt utilizate și cultivate de om, având o mare valoare nutritivă, medicinală, decorativă; multe dintre angiospermele arboricole sunt importante în industria lemnului. <br/>
-                    </p>
+                    </div>
                  </div>
              </div>
          </div>

@@ -1,5 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
  import React from "react"
+ import Image from "next/image"
  import { useRouter } from "next/router";
  export default function Cromozomi() {
     const router = useRouter();
@@ -40,18 +41,22 @@
                      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">CROMOZOMII</h2>
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600 text-center">
+                     <div className="mt-0 text-lg text-grey-600 text-center">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Definiție: </span> Sunt structuri permanente în nucleu - vizibili doar în timpul diviziunii nucleului (sub formă condensată spiralizată). <br/>
-                     </p>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Tipuri de cromozomi</span> <br/>
                          Cromozomul poate fi: <br/>
                          - de tip procariot = o singură moleculă de ADN (un singur cromozom bacterian) <br/>
                          - de tip eucariot = ADN + proteine + lipide + ioni <br/>
-                     </p>
+                         <div className="flex justify-center -mt-32 ml-[53%]">
+                            <Image src="/images/cromozomi1.jpeg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                            <Image src="/images/cromozomi2.jpg" width={300} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  

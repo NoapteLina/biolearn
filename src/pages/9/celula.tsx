@@ -40,23 +40,24 @@ export default function Celula() {
           <div className="mx-auto max-w-7xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Celula și compoziția ei chimică</h2>
               <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none">
-                <p className="mt-0 text-lg text-gray-600">
+                <div className="mt-0 text-lg text-gray-900 text-center">
                 <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Definiție: </span> Celula este unitatea de bază, strcturală, funcțională și genetică a unui organism. <br/>
-                <Image src="" width={500} height={500} alt="Picture of the author"/>
-
-                </p>
+                <br/>
+                <div className="flex justify-center">
+                <Image src="/images/celula.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                </div>
+                </div>
                 </div>
               <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-16 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none">
-                
-                 <p className="mt-0 text-lg text-gray-600"> <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Funcțiile celulei: </span><br/>
+                 <span className="mt-0 text-lg text-gray-900"> <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Funcțiile celulei: </span><br/>
                   - menține homeostazia mediului intern <br/>
                   - sintetizează compuși proprii după un anumit cod <br/>
                   - are capacitatea de refacere și autoreproducere <br/>
                   - se adaptează la conđițiile de viață variate ale mediului <br />
-                </p>
+                </span>
               </div>
               <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-16 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none">
-                <p className="mt-0 text-lg text-gray-600">
+                <div className="mt-0 text-lg text-gray-900 text-right">
                   <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Observație! </span> Forma este diferită în funcție de poziție și funcție.  <br/>
                   Formele celulei: <br/>
                   - fusiformă <br/>
@@ -64,10 +65,14 @@ export default function Celula() {
                   - ovală <br/>
                   - piramidală <br/>
                   - stelată <br/>
-                </p>
+                  <span className="flex justify-left -mt-48">
+                  <Image src="/images/hematii.jpg" width={300} height={300} alt="Picture of the author" className="rounded-lg"/>
+                  <Image src="/images/neuroni.jpg" width={300} height={300} alt="Picture of the author" className="rounded-lg"/>
+                  </span>
+                </div>
               </div>
               <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-16 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none">
-                <p className="mt-0 text-lg text-gray-600">
+                <span className="mt-0 text-lg text-gray-900">
                   <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Compoziția chimică a celulei</span> <br/>
                   Celula conține: <br/>
                   - 60% apă <br/>
@@ -76,16 +81,20 @@ export default function Celula() {
                   Glucidele = carbonați (ex: amidon, glucoză, glicogen, chitina, celuloza) <br/>
                   Lipidele = fosfolipide și trigliceride <br/>
                   Proteinele = conțin aminoacizi (ex: cheratina, clorofila, hemoglobina, anticorpi) <br/>
-                </p>
+                </span>
               </div>
               <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-16 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none">
-                <p className="mt-0 text-lg text-gray-600">
+                <div className="mt-0 text-lg text-gray-900  text-right">
                   <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Acizii nucleici</span> <br/>
                   - ADN = acid dezoxiribonucleic <br/>
                   <span className="underline decoration-dotted">Rol:</span> deține și transmite informația  genetică <br/>
                   - ARN = acid ribonucleic <br/>
                   <span className="underline decoration-dotted">Rol:</span> determină sinteza proteinelor
-                </p>
+                  <span className="flex justify-left -mt-32">
+                  <Image src="/images/adn.jpeg" width={300} height={300} alt="Picture of the author" className="rounded-lg"/>
+                  <Image src="/images/arn.jpg" width={300} height={300} alt="Picture of the author" className="rounded-lg"/>
+                  </span>
+                </div>
               </div>
             </div>
             </div>

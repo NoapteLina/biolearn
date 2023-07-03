@@ -1,5 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
  import React from "react"
+ import Image from "next/image"
  import { useRouter } from "next/router";
  export default function Animal() {
     const router = useRouter();
@@ -48,43 +49,55 @@
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Încrengătura celenterate</span> <br/>
                          - animale acvatice sau parazite în corpul altor organisme <br/>
                         - corpul turtit dorso-ventral, au organe diferentiate <br/>
                         Grupate în: <br/>
                         - clasa hidrozoare - hidra de apă dulce <br/>
                         - clasa scizofoare - meduza <br/>
-                     </p>
+                        <div className="flex justify-center -mt-44 ml-[60%]">
+                            <Image src="/images/meduza.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
-                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Încrengătura viermi lați (platelmiți)</span> <br/>
+                     <div className="mt-0 text-lg text-grey-600 text-right">
+                        <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Încrengătura viermi lați (platelmiți)</span> <br/>
                          - animale acvatice sau parazite în corpul altor organisme <br/>
                         - corpul turtit dorso-ventral, aur organe diferențiate <br/>
                         Grupate în:     <br/>
                         - clasa termatode - viermele de gălbează <br/>
                         - clasa cestode - tenia <br/>
-                     </p>
+                        <div className="flex justify-center -mt-44 mr-[70%]">
+                            <Image src="/images/tenia.jpeg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Încrengătura viermi cilindrici (nematelminți)</span> <br/>
                          - animale acvatice sau terestre, libere sau parazite <br/>
                         - corpul cilindric, ascuțit la capete <br/>
                         - grupate în: clasa nematode - limbricul, trichina, oxiurul<br/>
-                     </p>
+                        <div className="flex justify-center -mt-32 ml-[60%]">
+                            <Image src="/images/trichina.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
                      
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600 text-right">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Încrengătura viermi inelați (anelide)</span> <br/>
                          - animale terestre sau acvatice, libere sau ectoparazite <br/>
                         - corpul alcătuit din inele care corespund unui compartimentări interne <br/>
                         - grupate în: clasa oligochete (ex: râma) și clasa hrudinee (ex: lipitoarea)<br/>
-                     </p>
+                        <div className="flex justify-center -mt-32 mr-[70%]">
+                            <Image src="/images/lipitori.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
 
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
@@ -109,42 +122,51 @@
                         Grupate în: <br/>
                         1. clasa pești osoși - crap, somn, biban, caras, scrumbie <br/>
                         2. clasa pești osoși cartilaginoși - cega, morun, nisetru, păstruga <br/>
+                        <div className="flex justify-center -mt-52 ml-[60%]">
+                            <Image src="/images/nisetru.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
                     </p>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Supraclasa tetrapode</span> <br/>
                         - prezintă patru membre <br/>
-                    </p>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600 text-right">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Clasa amfibieni</span> <br/>
                         - animale adaptate la mediul terestru, dar dependente de mediul acvatic prin respirație (tegumentară, pulmonară) și reproducere(fecundația externă)<br/>
                         - sunt poikiloterme <br/>
                         Grupate în: <br/>
                         - ordinul anure (amfibieni fără coadă): broasca de lac, brotăcelul <br/>
                         - ordinul urodele (amfibieni cu coadă): salamandra, triton <br/>
-                    </p>
+                        <div className="flex justify-center -mt-24 mr-[70%]">
+                            <Image src="/images/triton.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Încrengătura moluște</span> <br/>
                         - animale terestre și acvatice, libere <br/>
                         - corpul moale, alcătuit din cap, masa viscerală și picior, poate fi protejat de o cochilie (melc)
                         sau de două valve (scoici)<br/>
-                        Grupate în:
+                        Grupate în: <br/>
                         - clasa gasteropode (melci)<br/>
                         - clasa lamelibranhiate (scoici)<br/>
                         - clasa cefalopode (sepie, caracatița)<br/>
-                    </p>
+                        <div className="flex justify-center -mt-16 ml-[60%]">
+                            <Image src="/images/caracatita.webp" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600 text-right">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Încrengătura artropode</span> <br/>
                         - animale răspândite în toate mediile de viață, libere sau parazite <br/>
                         - corpul protejat de un exoschelet chitinos <br/>
@@ -157,11 +179,14 @@
                         - clasa arahnide: căpușa, scorpionul, paianjenul <br/>
                         - clasa crustacee: rac, crab, crevete <br/>
                         - clasa insecte: fluturi, gândaci, lăcuste, furnici, libelule <br/>
-                    </p>
+                        <div className="flex justify-center -mt-16 mr-[70%]">
+                            <Image src="/images/scorpion.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Clasa reptile</span> <br/>
                         - animale adaptate complet la mediul terestru <br/>
                         - prezintă tegumentul îngroșat - respirația pulmonară, fecundația internă<br/>
@@ -171,11 +196,14 @@
                         - lacertilieni: șopârla verde, gușter <br/>
                         - chelonieni: broaște țestoase <br/>
                         - crocodilieni: aligator, crocodil <br/>
-                    </p>
+                        <div className="flex justify-center -mt-64 ml-[60%]">
+                            <Image src="/images/aligator.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600 text-right">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Clasa păsări</span> <br/>
                         - animale adaptate mediului aerian, terestru și acvatic <br/>
                         - corpul acoperit cu penaj, memebrele anterioare transformate în aripi <br/>
@@ -192,11 +220,14 @@
                         - acvatice: rața, gâsca, lebăda, pelican <br/>
                         - răpitoare de zi: uliu, șoim, acvila <br/>
                         - răpitoare de noapte: bufnița, turturea <br/>
-                    </p>
+                        <div className="flex justify-center -mt-48 mr-[70%]">
+                            <Image src="/images/barza.webp" width={300} height={300} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Clasa mamifere</span> (placentare)<br/>
                         - trăiesc in toate mediile de viața (predominant terestru) <br/>
                         - corpul acoperit cu blană <br/>
@@ -211,8 +242,11 @@
                         - pinipede: foca, morsa <br/>
                         - cetacee: balena, delfin <br/>
                         - proboscidieni: elefant <br/>
-                        - primate: maimuțe, cimpanzeu, gorila, urangutan | om
-                    </p>
+                        - primate: maimuțe, cimpanzeu, gorila, urangutan | om <br/>
+                        <div className="flex justify-center -mt-48 ml-[60%]">
+                            <Image src="/images/delfin.jpeg" width={300} height={300} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                    </div>
                  </div>
              </div>
          </div>

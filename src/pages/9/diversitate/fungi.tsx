@@ -1,5 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
  import React from "react"
+ import Image from "next/image"
  import { useRouter } from "next/router";
  export default function Fungi() {
     const router = useRouter();
@@ -60,21 +61,27 @@
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Clasa Ascomicete</span> = ciuperci superioare<br/>
                          - prezintă sporii specializați (ascospori), localizați în sporangele în formă de sac = asca <br/>
                         - Candida (este parazită, producând infecții ale urechilor, unghiilor, organitelor genitale) <br/>
-                     </p>
+                        <div className="flex justify-center -mt-24 ml-[80%]">
+                            <Image src="/images/candida.jpg" width={200} height={200} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600 text-right">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Clasa Bazidomicete</span> = ciuperci superioare evoluate <br/>
                          - prezintă spori specializați (bazidospori), localizați în sporangele de formă cubică (bazidie) <br/>
                         Pot fi: <br/>
                         - parazite (ex: rugina grâului, tăciunele porumbului) <br/>
                         - saprofice, cu pălarie: comestibile (ex: ghebele, hribul, ciuperca de câmp) și otrăvitoare (ex: muscarița, buretele ucigaș, hribul dracului) <br/>
-                     </p>
+                        <div className="flex justify-start -mt-32 ml-[%]">
+                            <Image src="/images/rugina-graului.jpg" width={200} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
                      
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  

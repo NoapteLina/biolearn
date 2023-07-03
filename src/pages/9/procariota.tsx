@@ -1,5 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
  import { useRouter } from "next/router";
+ import Image from 'next/image'
  import React from "react"
  export default function Procariota() {
      const router = useRouter();
@@ -39,22 +40,24 @@
                  <div className="mx-auto max-w-7xl lg:mx-0">
                      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Celula procariotă</h2>
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
- 
-                     <p className="mt-0 text-lg text-grey-600">
-                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Alcătuire: </span> <br/>
-                         - perete celular <br/>
-                         - membrana celulară <br/>
-                         - mezozomul <br/>
-                         - nucleoidul <br/>
-                         - citoplasma <br/>
-                         - ribozomii <br/>
-                         - aparatul fotosintetic <br/>
-                         - sistemul vascular <br/>
-                     </p>
+                        <div className="mt-0 text-lg text-grey-600">
+                            <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Alcătuire: </span> <br/>
+                            - perete celular <br/>
+                            - membrana celulară <br/>
+                            - mezozomul <br/>
+                            - nucleoidul <br/>
+                            - citoplasma <br/>
+                            - ribozomii <br/>
+                            - aparatul fotosintetic <br/>
+                            - sistemul vascular <br/>
+                            <div className="flex justify-center -mt-64 ml-[55%]">
+                            <Image src="/images/celula-procariota.png" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                            </div>
+                        </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">PERETELE CELULAR</span> <br/>
                          - Se găsește la bacterii și cianobacterii. <br/>
                          - Sunt foarte răspândite. <br/>
@@ -62,23 +65,29 @@
                          - Se găsește la exterior și are rol de protecție. <br/>
                          - La cianobacterii este acoperit de o teacă gelatinoasă, o capsulă prevăzută cu cili și flageli cu rol locomotor. <br/>
                          - Din punct de vedere chimic este alcătuit din mureină. <br/>
-                     </p>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">MEMBRANA CELULARĂ</span> <br/>
                          - Separă peretele celular de citoplasmă. <br/>
                          - Din punct de vedere chimic este de natură lipoproteică. <br/>
-                     </p>
+                         <div className="flex justify-end -mt-24">
+                            <Image src="/images/membrana.png" width={450} height={450} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600 text-right">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">MEZOZOMUL</span> <br/>
                          - Este o invaginare a membranei celulare. <br/>
                          - Are rol în respirație și ancorarea nucleoidului. <br/>
-                     </p>
+                         <div className="flex justify-start -mt-24">
+                            <Image src="/images/mezozom.jpg" width={350} height={350} alt="Picture of the author" className="rounded-lg"/>
+                        </div>
+                     </div>
                      
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
