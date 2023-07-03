@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { Button, Card } from 'flowbite-react'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
@@ -14,37 +17,15 @@ export class test {
     input: number,
     raspunsuri: string[] = []
   ) {
-    this.intrebare = intrebare
-    this.raspuns = raspuns
-    this.input = input
-    this.raspunsuri = raspunsuri
+    this.intrebare = intrebare!
+    this.raspuns = raspuns!
+    this.input = input!
+    this.raspunsuri = raspunsuri!
   }
 }
 
-function shuffleQs(intrebari: test[]) {
-  for (let i = intrebari.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[intrebari[i].intrebare, intrebari[j].intrebare] = [
-      intrebari[j]?.intrebare,
-      intrebari[i]?.intrebare,
-    ]
-    ;[intrebari[i].input, intrebari[j].input] = [
-      intrebari[j]?.input,
-      intrebari[i]?.input,
-    ]
-    ;[intrebari[i].raspuns, intrebari[j].raspuns] = [
-      intrebari[j]?.raspuns,
-      intrebari[i]?.raspuns,
-    ]
-    ;[intrebari[i].raspunsuri, intrebari[j].raspunsuri] = [
-      intrebari[j]?.raspunsuri,
-      intrebari[i]?.raspunsuri,
-    ]
-  }
-  return intrebari
-}
 let g_Intrebari: test[]
-let g_Answers: []
+let g_Answers: any[]
 let usedSet: number
 
 export const API_1 = {
@@ -166,36 +147,57 @@ const Test1 = () => {
       'metafază',
       'anafază',
     ]),
-  ])
+  ])!
+  function shuffleQs(intrebari: test[]) {
+    for (let i = intrebari.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[intrebari[i]!.intrebare, intrebari[j]!.intrebare] = [
+        intrebari[j]!.intrebare,
+        intrebari[i]!.intrebare,
+      ]
+      ;[intrebari[i]!.input, intrebari[j]!.input] = [
+        intrebari[j]!.input,
+        intrebari[i]!.input,
+      ]
+      ;[intrebari[i]!.raspuns, intrebari[j]!.raspuns] = [
+        intrebari[j]!.raspuns,
+        intrebari[i]!.raspuns,
+      ]
+      ;[intrebari[i]!.raspunsuri, intrebari[j]!.raspunsuri] = [
+        intrebari[j]!.raspunsuri,
+        intrebari[i]!.raspunsuri,
+      ]
+    }
+    return intrebari
+  }
   const [shouldRender, setRender] = useState(false)
   const tempAns = new Array(intrebari.length).fill(0)
   const [ansArray, setAnsarray] = useState(new Array(intrebari.length).fill(0))
   useEffect(() => {
     setIntrebari(shuffleQs(intrebari))
-    // intrebari.filter((v,i,a)=>a.findIndex(v2=>['intrebare'].every(k=>v2[k] ===v[k]))===i)
-    console.log(intrebari)
     setRender(true)
     g_Intrebari = intrebari
-  }, [])
+  }, [intrebari, setIntrebari])
   useEffect(() => {
     g_Answers = ansArray
   }, [ansArray])
   useEffect(() => {
     usedSet = usedTSet
-    }, [usedTSet])
+  }, [usedTSet])
   const router = useRouter()
   let currAns = -1
   const [counter, setCounter] = useState(0)
   const [currWord, setWord] = useState('Next')
   const activateButton = (id: number) => {
     currAns = id
-    document.getElementById(id)?.classList.add('outline')
+    document.getElementById(id.toString())?.classList.add('outline')
     for (let i = 1; i <= 4; i++) {
-      if (i != id) document.getElementById(i)?.classList.remove('outline')
+      if (i != id)
+        document.getElementById(i.toString())?.classList.remove('outline')
     }
   }
   const submit = () => {
-    intrebari[counter].input = currAns
+    intrebari[counter]!.input = currAns
     if (currAns === intrebari[counter]?.raspuns) {
       tempAns[counter] = 1
     }

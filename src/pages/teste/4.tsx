@@ -50,7 +50,7 @@ let g_Intrebari: test[]
 let g_Answers: any[]
 let usedSet: number
 
-export const API_2 = {
+export const API_4 = {
   getQuestions: function () {
     return g_Intrebari
   },
@@ -62,112 +62,127 @@ export const API_2 = {
   },
 }
 
-const Test2 = () => {
+const Test4 = () => {
   const [usedTSet, setUsedSet] = useState(0)
   const [intrebari, setIntrebari] = useState([
-    new test('Celule fotosensibile conține:', 1, -1, [
-      'retina',
-      'sclerotica',
-      'coroida',
-      'pupila',
+    new test(
+      'Exemplu de fruct uscat indehiscent, întâlnit la angiosperme, este:',
+      2,
+      -1,
+      ['capsula', 'cariospa', 'păstaia', 'silicva']
+    ),
+
+    new test('Celulele cu conuri sunt:', 4, -1, [
+      'absente în pata galbenă',
+      'celule chemosensibile',
+      'componente ale nervului optic',
+      'localizate în retină',
     ]),
 
-    new test('Albinismul este o maladie:', 4, -1, [
-      'heterozomală',
-      'dominantă',
-      'genomică',
-      'autozomală',
-    ]),
-
-    new test('Anafaza mitotică se caracterizează prin:', 2, -1, [
-      'formarea membranei nucleare',
-      'migrarea cromozomilor monocromatidici spre poli',
-      'dezorganizarea fusului de diviziune',
-      'individualizarea cromozomilor bicromatidici',
+    new test('La plante, fotosinteza:', 2, -1, [
+      'are loc în absența pigmenților asimilatori',
+      'este un tip de nutriție autotrofă',
+      'eliberează energie luminoasă',
+      'sintetizează substanțe anorganice',
     ]),
 
     new test(
-      'Din categoria țesuturilor embrionare fac parte țesuturile',
-      2,
+      'La realizarea funcției de nutriție a organismelor participă sistemele:',
+      1,
       -1,
-      ['secretoare', 'apicale', 'conductoare', 'de apărare']
+      [
+        'circulator, digestiv, excretor',
+        'digestiv, muscular, osos',
+        'excretor, nervos, muscular',
+        'respirator, osos, muscular',
+      ]
     ),
 
-    new test('Neuroni senzitivi cu rol de receptori se găsesc în:', 2, -1, [
-      'mugurele gustativ',
-      'epiteliul olfactiv',
-      'coroida',
-      'melcul membranos',
-    ]),
+    new test(
+      'Fiecare dintre celulele-fiice, formate prin diviziunea mitotică a unei celule-mamă cu 2n = 28 cromozomi, are:',
+      2,
+      -1,
+      [
+        '2n  = 28 cromozomi',
+        '2n = 14 cromozomi',
+        'n = 28 cromozomi',
+        'n = 14 cromozomi',
+      ]
+    ),
 
-    new test('Sunt talofite:', 1, -1, [
-      'briofitele',
-      'pterodofitele',
-      'gimnospermele',
-      'angiospermele',
-    ]),
-
-    new test('În procesul de fermentație lactică se oxidează', 1, -1, [
-      'glucoza',
-      'acidul lactic',
-      'alcoolul etilic',
-      'acidul acetic',
-    ]),
-
-    new test('Conțin enzime oxido-reducătoare', 4, -1, [
-      'centrozomii',
-      'vacuolele',
-      'ribozomii',
-      'mitocondriile',
-    ]),
-
-    new test('Orientarea frunzelor către lumină reprezintă:', 3, -1, [
-      'o fotonastie',
-      'o termonastie',
-      'un fototropism',
-      'un fototactism',
-    ]),
-
-    new test('Aparține artropodelor:', 1, -1, [
-      'racul',
-      'hidra',
-      'râma',
-      'meduza',
+    new test('Insuficiența renală cronică este o boală a sistemului:', 3, -1, [
+      'circulator',
+      'digestiv',
+      'excretor',
+      'respirator',
     ]),
 
     new test(
-      'Regiunea de digestie chimică finală a alimentelor este reprezentată de:',
-      2,
+      'Glanda anexă, componentă a sistemului digestiv al mamiferelor este:',
+      3,
       -1,
-      ['cavitatea bucală', 'intestinul subțire', 'stomac', 'intestinul gros']
+      ['esofagul', 'faringele', 'pancreasul', 'stomacul']
     ),
 
-    new test('Nucleoidul:', 3, -1, [
-      'este un organ cu rol în respirația celulei procariote',
-      'este alcătuit dintr-o moleculă de ARN circulară',
-      'reprezintă genomul bacterian',
-      'se află în interiorul nucleului la eucariote',
+    new test('La plante, fotosinteza:', 4, -1, [
+      'are sediul în mitocondrie',
+      'are loc în absența pigmenților clorofilieni',
+      'descompune apa în faze de întuneric',
+      'se poate evidenția după O2 produs',
     ]),
 
-    new test('HCl din sucul gastric', 3, -1, [
-      'hidrolizează glucidele',
-      'coagulează/încheagă laptele',
-      'împiedică dezvoltarea germenilor',
-      'emulsionează lipazele',
+    new test(
+      'Fiecare dintre celulele-fiice formate prin diviziunea meiotică a unei celule-mamă cu 2n = 36 cromozomi are:',
+      4,
+      -1,
+      [
+        '2n = 36 cromozomi',
+        '2n = 18 cromozomi',
+        'n = 36 cromozomi',
+        'n = 18 cromozomi',
+      ]
+    ),
+
+    new test('Boală cu transmitere sexuală este:', 2, -1, [
+      'astigmatismul',
+      'candidoza',
+      'epilepsia',
+      'gastrita',
     ]),
 
-    new test('În procesul de fermentație alcoolică se oxidează:', 4, -1, [
-      'alcoolul etilic',
-      'aminoacizii',
-      'acidul acetic',
-      'glucoza',
+    new test('Cale respiratorie a mamiferelor este:', 4, -1, [
+      'alveola pulmonară',
+      'esofagul',
+      'pleura',
+      'laringele',
     ]),
 
-    new test('Măduva spinării prezintă:', 3, -1, [
-      'nuclei somatici la exterior',
-      'substanță albă la interior',
-      'fascicule de substanță albă la periferie',
-      'substanță cenușie la exterior',
+    new test('La mamifere, ureterele', 4, -1, [
+      'alcătuiesc zona medulară a rinichilor',
+      'au formă de pâlnie cu baza spre hilul renal',
+      'sunt localizate între vezica urinară și uretră',
+      'transportă urina către vezica urinară',
+    ]),
+
+    new test('La plante, fotosinteza:', 2, -1, [
+      'eliberează CO2 în prezența luminii',
+      'necesită prezența pigmenților asimilatori',
+      'poate fi evidențiată după O2 absorbit',
+      'produce o cantitate mare de energie',
+    ]),
+
+    new test('Din grupul protistelor fac parte:', 4, -1, [
+      'briatele',
+      'eubacteriile',
+      'filicatele',
+      'sporozoarele',
+    ]),
+
+    new test('Anurele sunt:', 3, -1, [
+      'anelide',
+      'artropode',
+      'cordate',
+      'reptile',
     ]),
   ])
   const [shouldRender, setRender] = useState(false)
@@ -267,4 +282,4 @@ const Test2 = () => {
 
   return <div>{renderQuestions()}</div>
 }
-export default Test2
+export default Test4

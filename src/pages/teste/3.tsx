@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { Button, Card } from 'flowbite-react'
 import React, { useEffect } from 'react'
@@ -50,7 +50,7 @@ let g_Intrebari: test[]
 let g_Answers: any[]
 let usedSet: number
 
-export const API_2 = {
+export const API_3 = {
   getQuestions: function () {
     return g_Intrebari
   },
@@ -62,114 +62,125 @@ export const API_2 = {
   },
 }
 
-const Test2 = () => {
+const Test3 = () => {
   const [usedTSet, setUsedSet] = useState(0)
   const [intrebari, setIntrebari] = useState([
-    new test('Celule fotosensibile conține:', 1, -1, [
-      'retina',
-      'sclerotica',
-      'coroida',
-      'pupila',
-    ]),
-
-    new test('Albinismul este o maladie:', 4, -1, [
-      'heterozomală',
-      'dominantă',
-      'genomică',
-      'autozomală',
-    ]),
-
-    new test('Anafaza mitotică se caracterizează prin:', 2, -1, [
-      'formarea membranei nucleare',
-      'migrarea cromozomilor monocromatidici spre poli',
-      'dezorganizarea fusului de diviziune',
-      'individualizarea cromozomilor bicromatidici',
+    new test('Fac parte din regnul Animal, grupul Artropode:', 1, -1, [
+      'arahnidele',
+      'cefalopodele',
+      'hidrozoarele',
+      'nematodele',
     ]),
 
     new test(
-      'Din categoria țesuturilor embrionare fac parte țesuturile',
-      2,
+      'Fiecare dintre celulele-fiice formate prin diviziunea mitotică a unei celule-mamă cu 2n=10 cromozomi are:',
+      1,
       -1,
-      ['secretoare', 'apicale', 'conductoare', 'de apărare']
+      [
+        '2n = 10 cromozomi',
+        '2n = 5 cromozomi',
+        'n = 10 cromozomi',
+        'n = 5 cromozomi',
+      ]
     ),
 
-    new test('Neuroni senzitivi cu rol de receptori se găsesc în:', 2, -1, [
-      'mugurele gustativ',
-      'epiteliul olfactiv',
-      'coroida',
-      'melcul membranos',
+    new test(
+      'Una dintre căile urinare ale sistemului excretor al mamiferelor este:',
+      2,
+      -1,
+      ['nefronul', 'uretra', 'uterul', 'zona corticală']
+    ),
+
+    new test('Ficatul mamiferelor:', 4, -1, [
+      'este una dintre componentele tubului digestiv',
+      'este localizat în stânga stomacului',
+      'participă la digestia gastrică a alimentelor',
+      'secretă un suc digestiv lipsit de enzime',
     ]),
 
-    new test('Sunt talofite:', 1, -1, [
-      'briofitele',
-      'pterodofitele',
-      'gimnospermele',
-      'angiospermele',
+    new test('Țesutul osos spongios:', 3, -1, [
+      'are lamele osoase cu dispoziție concentrică',
+      'conține substanță fundamentală semidură',
+      'este un tip de țesut conjunctiv dur',
+      'este străbătut de canale Havers, cu vase și nervi',
     ]),
 
-    new test('În procesul de fermentație lactică se oxidează', 1, -1, [
-      'glucoza',
-      'acidul lactic',
-      'alcoolul etilic',
-      'acidul acetic',
+    new test('Peștii osoși aparțin grupului:', 3, -1, [
+      'cefalopode',
+      'celenterate',
+      'cordate',
+      'placentare',
     ]),
 
-    new test('Conțin enzime oxido-reducătoare', 4, -1, [
-      'centrozomii',
-      'vacuolele',
-      'ribozomii',
-      'mitocondriile',
+    new test('Rinichii mamiferelor sunt:', 4, -1, [
+      'alcătuiți din unități microscopice numite calice',
+      'componente ale căilor urinare',
+      'localizați în partea ventrală a cavității abdominale',
+      'protejați la exterior de o capsulă fibroasă',
     ]),
 
-    new test('Orientarea frunzelor către lumină reprezintă:', 3, -1, [
-      'o fotonastie',
-      'o termonastie',
-      'un fototropism',
-      'un fototactism',
+    new test('Nutriția heterotrofă:', 4, -1, [
+      'este specifică organismelor vegetale',
+      'constă în sinteza de substanțe organice',
+      'poate fi evidențiată după CO2 absorbit',
+      'se poate realiza saprofit și parazit',
     ]),
 
-    new test('Aparține artropodelor:', 1, -1, [
-      'racul',
-      'hidra',
-      'râma',
-      'meduza',
+    new test('Componentă a tubului digestiv al mamiferelor este:', 2, -1, [
+      'bronhia',
+      'faringele',
+      'laringele',
+      'pancreasul',
+    ]),
+
+    new test('Fotosinteza la plante:', 4, -1, [
+      'este un tip de nutriție heterotrofă',
+      'eliberează energie luminoasă',
+      'necesită prezența oxigenului',
+      'produce substanțe organice',
+    ]),
+
+    new test('Nefronul face parte din structura:', 3, -1, [
+      'encefalului',
+      'plămânului',
+      'rinichiului',
+      'stomacului',
+    ]),
+
+    new test('Coroida din structura ochiului mamiferelor:', 2, -1, [
+      'are rol în protecție a globului ocular',
+      'conține vase de sânge',
+      'este sediul fotoreceptor',
+      'face parte din sistemul optic',
     ]),
 
     new test(
-      'Regiunea de digestie chimică finală a alimentelor este reprezentată de:',
-      2,
+      'Fiecare dintre celulele-fiice formate prin diviziunea meiotică a unei celule-mamă cu 2n = 38 cromozomi are:',
+      4,
       -1,
-      ['cavitatea bucală', 'intestinul subțire', 'stomac', 'intestinul gros']
+      [
+        '2n = 38 cromozomi',
+        '2n = 19 cromozomi',
+        'n = 30 cromozomi',
+        'n = 19 cromozomi',
+      ]
     ),
 
-    new test('Nucleoidul:', 3, -1, [
-      'este un organ cu rol în respirația celulei procariote',
-      'este alcătuit dintr-o moleculă de ARN circulară',
-      'reprezintă genomul bacterian',
-      'se află în interiorul nucleului la eucariote',
+    new test('Sunt mamifere:', 2, -1, [
+      'anurele',
+      'placentarele',
+      'termatodele',
+      'urodelele',
     ]),
 
-    new test('HCl din sucul gastric', 3, -1, [
-      'hidrolizează glucidele',
-      'coagulează/încheagă laptele',
-      'împiedică dezvoltarea germenilor',
-      'emulsionează lipazele',
-    ]),
-
-    new test('În procesul de fermentație alcoolică se oxidează:', 4, -1, [
-      'alcoolul etilic',
-      'aminoacizii',
-      'acidul acetic',
-      'glucoza',
-    ]),
-
-    new test('Măduva spinării prezintă:', 3, -1, [
-      'nuclei somatici la exterior',
-      'substanță albă la interior',
-      'fascicule de substanță albă la periferie',
-      'substanță cenușie la exterior',
+    new test('Celulele cu bastonașe sunt:', 3, -1, [
+      'componentele nervului optic',
+      'localizate în coroidă',
+      'receptori vizuali',
+      'sensibile la culorile roșu și verde',
     ]),
   ])
+  console.log(intrebari)
   const [shouldRender, setRender] = useState(false)
   const tempAns = new Array(intrebari.length).fill(0)
   const [ansArray, setAnsarray] = useState(new Array(intrebari.length).fill(0))
@@ -267,4 +278,4 @@ const Test2 = () => {
 
   return <div>{renderQuestions()}</div>
 }
-export default Test2
+export default Test3

@@ -50,7 +50,7 @@ let g_Intrebari: test[]
 let g_Answers: any[]
 let usedSet: number
 
-export const API_2 = {
+export const API_9 = {
   getQuestions: function () {
     return g_Intrebari
   },
@@ -62,112 +62,117 @@ export const API_2 = {
   },
 }
 
-const Test2 = () => {
+const Test9 = () => {
   const [usedTSet, setUsedSet] = useState(0)
   const [intrebari, setIntrebari] = useState([
-    new test('Celule fotosensibile conține:', 1, -1, [
-      'retina',
-      'sclerotica',
-      'coroida',
-      'pupila',
-    ]),
-
-    new test('Albinismul este o maladie:', 4, -1, [
-      'heterozomală',
-      'dominantă',
-      'genomică',
-      'autozomală',
-    ]),
-
-    new test('Anafaza mitotică se caracterizează prin:', 2, -1, [
-      'formarea membranei nucleare',
-      'migrarea cromozomilor monocromatidici spre poli',
-      'dezorganizarea fusului de diviziune',
-      'individualizarea cromozomilor bicromatidici',
+    new test('Meristemele apicale:', 3, -1, [
+      'conțin celule care nu se mai pot divide',
+      'sunt alcătuite din celulele specializate',
+      'se află în vârfurile de creștere',
+      'sunt situate lateral de axul organului vegetativ',
     ]),
 
     new test(
-      'Din categoria țesuturilor embrionare fac parte țesuturile',
+      'Pentru a realiza fotosinteza, un organism viu trebuie să:',
       2,
       -1,
-      ['secretoare', 'apicale', 'conductoare', 'de apărare']
+      [
+        'aparțină regnului fungi',
+        'conțină cloroplaste',
+        'absoarbă glucoza din sol',
+        'sintetizeze substanțe anorganice',
+      ]
     ),
 
-    new test('Neuroni senzitivi cu rol de receptori se găsesc în:', 2, -1, [
-      'mugurele gustativ',
-      'epiteliul olfactiv',
-      'coroida',
-      'melcul membranos',
-    ]),
-
-    new test('Sunt talofite:', 1, -1, [
-      'briofitele',
-      'pterodofitele',
-      'gimnospermele',
-      'angiospermele',
-    ]),
-
-    new test('În procesul de fermentație lactică se oxidează', 1, -1, [
-      'glucoza',
-      'acidul lactic',
-      'alcoolul etilic',
-      'acidul acetic',
-    ]),
-
-    new test('Conțin enzime oxido-reducătoare', 4, -1, [
-      'centrozomii',
-      'vacuolele',
-      'ribozomii',
-      'mitocondriile',
-    ]),
-
-    new test('Orientarea frunzelor către lumină reprezintă:', 3, -1, [
-      'o fotonastie',
-      'o termonastie',
-      'un fototropism',
-      'un fototactism',
-    ]),
-
-    new test('Aparține artropodelor:', 1, -1, [
-      'racul',
-      'hidra',
-      'râma',
-      'meduza',
+    new test('Drojdiile sunt:', 1, -1, [
+      'ascomicete',
+      'filicate',
+      'sporozoare',
+      'procariote',
     ]),
 
     new test(
-      'Regiunea de digestie chimică finală a alimentelor este reprezentată de:',
-      2,
+      'Genotipurile tuturor gameților formați de un organism AaBb sunt:',
+      4,
       -1,
-      ['cavitatea bucală', 'intestinul subțire', 'stomac', 'intestinul gros']
+      ['A, B, a, b', 'Aa, Bb', 'AaB, Aab', 'AB, Ab, aB, ab']
     ),
 
-    new test('Nucleoidul:', 3, -1, [
-      'este un organ cu rol în respirația celulei procariote',
-      'este alcătuit dintr-o moleculă de ARN circulară',
-      'reprezintă genomul bacterian',
-      'se află în interiorul nucleului la eucariote',
+    new test('Tisa:', 1, -1, [
+      'este o specie ocrotită prin lege',
+      'face parte din grupul angiospermelor',
+      'prezintă semințele închise în fruct',
+      'se reproduce asexuat prin rizomi',
     ]),
 
-    new test('HCl din sucul gastric', 3, -1, [
-      'hidrolizează glucidele',
-      'coagulează/încheagă laptele',
-      'împiedică dezvoltarea germenilor',
-      'emulsionează lipazele',
+    new test('La mamifere, pielea conține receptorii:', 3, -1, [
+      'auditivi',
+      'gustativi',
+      'tactili',
+      'vizuali',
     ]),
 
-    new test('În procesul de fermentație alcoolică se oxidează:', 4, -1, [
-      'alcoolul etilic',
-      'aminoacizii',
-      'acidul acetic',
-      'glucoza',
+    new test('Sporozoarele aparțin regnului:', 4, -1, [
+      'Animale',
+      'Fungi',
+      'Plante',
+      'Protiste',
     ]),
 
-    new test('Măduva spinării prezintă:', 3, -1, [
-      'nuclei somatici la exterior',
-      'substanță albă la interior',
-      'fascicule de substanță albă la periferie',
-      'substanță cenușie la exterior',
+    new test('În timpul profazei mitotice:', 3, -1, [
+      'se dublează cantitatea de ADN',
+      'se realizează fecundația',
+      'se individualizează cromozomii',
+      'se reduce la jumătate numărul de cromozomi ai celulelor',
+    ]),
+
+    new test('Fructul salcâmului este:', 4, -1, [
+      'achemă',
+      'bacă',
+      'drupă',
+      'păstaie',
+    ]),
+
+    new test('Ursul:', 1, -1, [
+      'este un mamifer plantigrad',
+      'respiră anaerob',
+      'se hrănește autotrof',
+      'se reproduce asexuat',
+    ]),
+
+    new test('Plantă dicotiledonată este:', 3, -1, [
+      'grâul',
+      'irisul',
+      'măceșul',
+      'porumbul',
+    ]),
+
+    new test('În cazul respirației anaerobe:', 4, -1, [
+      'au loc reacții de oxidare completă',
+      'se formează apă',
+      'sunt oxidate substanțe anorganice',
+      'rezultă produși intermediari',
+    ]),
+
+    new test('Păsările au:', 1, -1, [
+      'fecundația internă',
+      'nutriție parazită',
+      'temperatura corpului variabilă',
+      'respirație branhială',
+    ]),
+
+    new test(
+      'Nutrimentele rezultate prin degradarea enzimatică a proteinelor sunt:',
+      2,
+      -1,
+      ['acizii grași', 'aminoacizii', 'glicerolul', 'monozaharidele']
+    ),
+
+    new test('Aparține sistemelor digestiv și respirator:', 3, -1, [
+      'cavitatea nazală',
+      'esofagul',
+      'faringele',
+      'laringele',
     ]),
   ])
   const [shouldRender, setRender] = useState(false)
@@ -267,4 +272,4 @@ const Test2 = () => {
 
   return <div>{renderQuestions()}</div>
 }
-export default Test2
+export default Test9
