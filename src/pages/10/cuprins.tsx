@@ -1,14 +1,8 @@
 'use client';
-<<<<<<< HEAD
 import { Button, Tooltip } from 'flowbite-react';
 import React from "react";
 import { useRouter } from "next/router";
 import { InformationCircleIcon } from '@heroicons/react/24/outline';
-=======
-import { Button } from 'flowbite-react';
-import React from "react";
-import { useRouter } from "next/router";
->>>>>>> fdd851f49accc83eaf3e575c8130fb01d5601ff8
 function Cuprins (){
     const router = useRouter()
     return (
