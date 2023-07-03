@@ -1,8 +1,7 @@
 'use client';
-import { Button, Card } from 'flowbite-react';
+import { Button } from 'flowbite-react';
 import React from "react";
 import { useRouter } from "next/router";
-import BioLearnLogo from "~/components/icons/logo/BioLearnLogo";
 function Cuprins (){
     const router = useRouter()
     return (

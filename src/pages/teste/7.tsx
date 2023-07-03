@@ -50,7 +50,7 @@ let g_Intrebari: test[]
 let g_Answers: any[]
 let usedSet: number
 
-export const API_2 = {
+export const API_7 = {
   getQuestions: function () {
     return g_Intrebari
   },
@@ -62,112 +62,117 @@ export const API_2 = {
   },
 }
 
-const Test2 = () => {
+const Test7 = () => {
   const [usedTSet, setUsedSet] = useState(0)
   const [intrebari, setIntrebari] = useState([
-    new test('Celule fotosensibile conține:', 1, -1, [
-      'retina',
-      'sclerotica',
-      'coroida',
-      'pupila',
-    ]),
-
-    new test('Albinismul este o maladie:', 4, -1, [
-      'heterozomală',
-      'dominantă',
-      'genomică',
-      'autozomală',
-    ]),
-
-    new test('Anafaza mitotică se caracterizează prin:', 2, -1, [
-      'formarea membranei nucleare',
-      'migrarea cromozomilor monocromatidici spre poli',
-      'dezorganizarea fusului de diviziune',
-      'individualizarea cromozomilor bicromatidici',
+    new test('Este un constituent specific celulei vegetale:', 2, -1, [
+      'lizozomul',
+      'peretele celular',
+      'reticulul endoplasmatic',
+      'ribozomul',
     ]),
 
     new test(
-      'Din categoria țesuturilor embrionare fac parte țesuturile',
-      2,
+      'Fiecare din celulele-fiice, rezultate din diviziunea meiotică a unei celule-mamă cu 2n = 28 cromozomi, are:',
+      3,
       -1,
-      ['secretoare', 'apicale', 'conductoare', 'de apărare']
+      [
+        '2n = 14 cromozomi',
+        '2n = 28 cromozomi',
+        'n = 24 cromozomi',
+        'n = 28 cromozomi',
+      ]
     ),
 
-    new test('Neuroni senzitivi cu rol de receptori se găsesc în:', 2, -1, [
-      'mugurele gustativ',
-      'epiteliul olfactiv',
-      'coroida',
-      'melcul membranos',
+    new test('Cristele intră în alcătuirea:', 2, -1, [
+      'cloroplastelor',
+      'mitocondriilor',
+      'nucleului',
+      'vacuolelor',
     ]),
 
-    new test('Sunt talofite:', 1, -1, [
-      'briofitele',
-      'pterodofitele',
-      'gimnospermele',
-      'angiospermele',
+    new test('Gregor Mendel:', 3, -1, [
+      'a demonstrat segregarea independentă a perechilor de caractere',
+      'a enunțat legea codominanței, în cazul grupelor de sânge',
+      'a experimentat hibridarea pe plante autogame',
+      'a realizat experiențe de hibridare la șoareci',
     ]),
 
-    new test('În procesul de fermentație lactică se oxidează', 1, -1, [
-      'glucoza',
-      'acidul lactic',
-      'alcoolul etilic',
-      'acidul acetic',
+    new test('Hemoglobina:', 2, -1, [
+      'conține magneziu',
+      'este o proteină',
+      'se găsește în trombocite',
+      'la nivelul plămânilor se combină cu CO2',
     ]),
 
-    new test('Conțin enzime oxido-reducătoare', 4, -1, [
-      'centrozomii',
-      'vacuolele',
-      'ribozomii',
+    new test(
+      'Nutrimente care rezultă din digestia chimică a lipidelor sunt:',
+      1,
+      -1,
+      ['acizii grași', 'aminoacizii', 'glucoza', 'peptidele']
+    ),
+
+    new test('Bacilul fânului face parte din regnul:', 2, -1, [
+      'Fungi',
+      'Monera',
+      'Protista',
+      'Plante',
+    ]),
+
+    new test('Au rol în producerea energiei celulare:', 3, -1, [
+      'dictiozomii',
+      'lizozomii',
       'mitocondriile',
+      'ribozomii',
     ]),
 
-    new test('Orientarea frunzelor către lumină reprezintă:', 3, -1, [
-      'o fotonastie',
-      'o termonastie',
-      'un fototropism',
-      'un fototactism',
+    new test('Respirația aerobă:', 1, -1, [
+      'are loc în prezența oxigenului',
+      'duce la sinteza de substanțe organice',
+      'necesită prezența luminii',
+      'se mai numește fermentație',
     ]),
 
-    new test('Aparține artropodelor:', 1, -1, [
-      'racul',
-      'hidra',
-      'râma',
-      'meduza',
+    new test('Se deplasează prin fugă:', 4, -1, [
+      'brotăcelul',
+      'leneșul',
+      'tritonul',
+      'struțul',
+    ]),
+
+    new test('Sindromul Turner:', 4, -1, [
+      'afectează în mod egal ambele sexe',
+      'este o maladie autozomală',
+      'reprezintă o trisomie',
+      'se caracterizează prin prezența a 45 de cromozomi',
+    ]),
+
+    new test('Cloroplastele prezintă:', 3, -1, [
+      'carioplasmă la interior',
+      'criste cu enzime',
+      'grane',
+      'o membrană simplă',
+    ]),
+
+    new test('Artera pulmonară pornește din:', 3, -1, [
+      'atriul drept',
+      'atriul stâng',
+      'ventriculul drept',
+      'ventriculul stâng',
     ]),
 
     new test(
-      'Regiunea de digestie chimică finală a alimentelor este reprezentată de:',
-      2,
+      'Este o cale comună, genitală și urinară, întâlnită la masculii mamiferelor:',
+      3,
       -1,
-      ['cavitatea bucală', 'intestinul subțire', 'stomac', 'intestinul gros']
+      ['prostata', 'ureterul', 'uretra', 'vezica urinară']
     ),
 
-    new test('Nucleoidul:', 3, -1, [
-      'este un organ cu rol în respirația celulei procariote',
-      'este alcătuit dintr-o moleculă de ARN circulară',
-      'reprezintă genomul bacterian',
-      'se află în interiorul nucleului la eucariote',
-    ]),
-
-    new test('HCl din sucul gastric', 3, -1, [
-      'hidrolizează glucidele',
-      'coagulează/încheagă laptele',
-      'împiedică dezvoltarea germenilor',
-      'emulsionează lipazele',
-    ]),
-
-    new test('În procesul de fermentație alcoolică se oxidează:', 4, -1, [
-      'alcoolul etilic',
-      'aminoacizii',
-      'acidul acetic',
-      'glucoza',
-    ]),
-
-    new test('Măduva spinării prezintă:', 3, -1, [
-      'nuclei somatici la exterior',
-      'substanță albă la interior',
-      'fascicule de substanță albă la periferie',
-      'substanță cenușie la exterior',
+    new test('Prin ereditate se înțelege:', 2, -1, [
+      'apariția unor caractere diferite la descendenții unei familii',
+      'moștenirea, de către descendenți, a unor caractere corespunzătoare speciei',
+      'proprietatea indivizilor din aceeași specie de a se deosebi între ei',
+      'transmiterea caracterelor de la descendenți la ascendenți',
     ]),
   ])
   const [shouldRender, setRender] = useState(false)
@@ -267,4 +272,4 @@ const Test2 = () => {
 
   return <div>{renderQuestions()}</div>
 }
-export default Test2
+export default Test7

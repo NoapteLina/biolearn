@@ -50,7 +50,7 @@ let g_Intrebari: test[]
 let g_Answers: any[]
 let usedSet: number
 
-export const API_2 = {
+export const API_5 = {
   getQuestions: function () {
     return g_Intrebari
   },
@@ -62,112 +62,117 @@ export const API_2 = {
   },
 }
 
-const Test2 = () => {
+const Test5 = () => {
   const [usedTSet, setUsedSet] = useState(0)
   const [intrebari, setIntrebari] = useState([
-    new test('Celule fotosensibile conține:', 1, -1, [
-      'retina',
-      'sclerotica',
-      'coroida',
-      'pupila',
+    new test('Gameții feminini se formează prin diviziunea:', 4, -1, [
+      'ovulului',
+      'mitotică',
+      'testiculului',
+      'meiotică',
     ]),
 
-    new test('Albinismul este o maladie:', 4, -1, [
-      'heterozomală',
-      'dominantă',
-      'genomică',
-      'autozomală',
+    new test('Sindromul Down reprezintă:', 1, -1, [
+      'trisomia 21',
+      'trisomia 18',
+      'trisomia 13',
+      'trisomia 22',
     ]),
 
-    new test('Anafaza mitotică se caracterizează prin:', 2, -1, [
-      'formarea membranei nucleare',
-      'migrarea cromozomilor monocromatidici spre poli',
-      'dezorganizarea fusului de diviziune',
-      'individualizarea cromozomilor bicromatidici',
+    new test('Este plantă dicotiledonată:', 2, -1, [
+      'porumbul',
+      'crizantema',
+      'ceapa',
+      'gladiola',
     ]),
 
-    new test(
-      'Din categoria țesuturilor embrionare fac parte țesuturile',
-      2,
-      -1,
-      ['secretoare', 'apicale', 'conductoare', 'de apărare']
-    ),
-
-    new test('Neuroni senzitivi cu rol de receptori se găsesc în:', 2, -1, [
-      'mugurele gustativ',
-      'epiteliul olfactiv',
-      'coroida',
-      'melcul membranos',
+    new test('Mamifer digitigrad este:', 2, -1, [
+      'ariciul',
+      'pisica',
+      'oaia',
+      'calul',
     ]),
 
-    new test('Sunt talofite:', 1, -1, [
-      'briofitele',
-      'pterodofitele',
-      'gimnospermele',
-      'angiospermele',
+    new test('Trombocitele au rol în:', 3, -1, [
+      'transportul gazelor',
+      'fagocitoza microbilor',
+      'coagularea sângelui',
+      'imunitatea organismului',
     ]),
 
-    new test('În procesul de fermentație lactică se oxidează', 1, -1, [
-      'glucoza',
-      'acidul lactic',
-      'alcoolul etilic',
-      'acidul acetic',
+    new test('Peștii au:', 4, -1, [
+      'respirație branhială',
+      'dezvoltare prin metamorfoză',
+      'înotătoare codală pereche',
+      'nutriție heterotrofă',
     ]),
 
-    new test('Conțin enzime oxido-reducătoare', 4, -1, [
-      'centrozomii',
-      'vacuolele',
-      'ribozomii',
+    new test('Fermentația alcoolică este produsă de:', 1, -1, [
+      'drojdii',
+      'flagelate',
+      'mucegaiuri',
+      'protiste',
+    ]),
+
+    new test('Seismonastiile sunt:', 3, -1, [
+      'induse cu forța gravitațională',
+      'mișcări orientate ale plantelor',
+      'prezente la frunzele de mimoză',
+      'provocate de variații termice',
+    ]),
+
+    new test('Respirația cutanee la vertebrate:', 2, -1, [
+      'este prezentă la reptilele acvatice și terestre',
+      'este completată de alte tipuri de respirație',
+      'se face printr-un sistem de tuburi',
+      'presupune existența unui tegument uscat',
+    ]),
+
+    new test('Sunt organite celulare cu rol în respirație:', 3, -1, [
+      'cloroplastele',
+      'oleoplastele',
       'mitocondriile',
-    ]),
-
-    new test('Orientarea frunzelor către lumină reprezintă:', 3, -1, [
-      'o fotonastie',
-      'o termonastie',
-      'un fototropism',
-      'un fototactism',
-    ]),
-
-    new test('Aparține artropodelor:', 1, -1, [
-      'racul',
-      'hidra',
-      'râma',
-      'meduza',
+      'plstidele',
     ]),
 
     new test(
-      'Regiunea de digestie chimică finală a alimentelor este reprezentată de:',
-      2,
+      'Variabilitatea reprezintă însușirea organismelor care aparțin specii de a:',
+      3,
       -1,
-      ['cavitatea bucală', 'intestinul subțire', 'stomac', 'intestinul gros']
+      [
+        'deține aceeași informație genetică',
+        'realiza un permanent schimb cu mediul',
+        'se deosbi unele de celelalte',
+        'transmite caractere la descendenți',
+      ]
     ),
 
-    new test('Nucleoidul:', 3, -1, [
-      'este un organ cu rol în respirația celulei procariote',
-      'este alcătuit dintr-o moleculă de ARN circulară',
-      'reprezintă genomul bacterian',
-      'se află în interiorul nucleului la eucariote',
+    new test('Cerebelul:', 3, -1, [
+      'are rol în înregistrarea temperaturii',
+      'este situat în canalul vertebral',
+      'prezintă substanță albă la interior',
+      'recepționează informații vizuale',
     ]),
 
-    new test('HCl din sucul gastric', 3, -1, [
-      'hidrolizează glucidele',
-      'coagulează/încheagă laptele',
-      'împiedică dezvoltarea germenilor',
-      'emulsionează lipazele',
+    new test('Animal ocrotit în Delta Dunării este:', 4, -1, [
+      'tisa',
+      'crapul',
+      'râsul',
+      'lopătanul',
     ]),
 
-    new test('În procesul de fermentație alcoolică se oxidează:', 4, -1, [
-      'alcoolul etilic',
-      'aminoacizii',
-      'acidul acetic',
-      'glucoza',
+    new test('Au rol în digestia intracelulară:', 2, -1, [
+      'centriolii',
+      'lizozomii',
+      'nucleolii',
+      'ribozomii',
     ]),
 
-    new test('Măduva spinării prezintă:', 3, -1, [
-      'nuclei somatici la exterior',
-      'substanță albă la interior',
-      'fascicule de substanță albă la periferie',
-      'substanță cenușie la exterior',
+    new test('Prezintă corp acoperit cu pene:', 3, -1, [
+      'amfibienii',
+      'mamiferele',
+      'păsările',
+      'reptilele',
     ]),
   ])
   const [shouldRender, setRender] = useState(false)
@@ -267,4 +272,4 @@ const Test2 = () => {
 
   return <div>{renderQuestions()}</div>
 }
-export default Test2
+export default Test5

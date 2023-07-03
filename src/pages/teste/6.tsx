@@ -50,7 +50,7 @@ let g_Intrebari: test[]
 let g_Answers: any[]
 let usedSet: number
 
-export const API_2 = {
+export const API_6 = {
   getQuestions: function () {
     return g_Intrebari
   },
@@ -62,112 +62,112 @@ export const API_2 = {
   },
 }
 
-const Test2 = () => {
+const Test6 = () => {
   const [usedTSet, setUsedSet] = useState(0)
   const [intrebari, setIntrebari] = useState([
-    new test('Celule fotosensibile conține:', 1, -1, [
-      'retina',
-      'sclerotica',
-      'coroida',
-      'pupila',
+    new test('Alegeți  asocierea corectă:', 1, -1, [
+      'tenie - Platelminți',
+      'melcul de livadă - Lamelibranhiate (Bivalve)',
+      'păianjenul cu cruce - Insecte ',
+      'broasca de lac - Urodele',
     ]),
 
-    new test('Albinismul este o maladie:', 4, -1, [
-      'heterozomală',
-      'dominantă',
-      'genomică',
-      'autozomală',
+    new test('Un individ cu genotipul AABB:', 4, -1, [
+      'este hibrid pentru ambele perechi de factori ereditari',
+      'formează 2 tipuri de gameți',
+      'manifestă fenotipul de gameți',
+      'este homozigot dominant pentru două perechi de gene',
     ]),
 
-    new test('Anafaza mitotică se caracterizează prin:', 2, -1, [
-      'formarea membranei nucleare',
-      'migrarea cromozomilor monocromatidici spre poli',
-      'dezorganizarea fusului de diviziune',
-      'individualizarea cromozomilor bicromatidici',
+    new test('Neuronul:', 3, -1, [
+      'conține mielină la nivelul corpului neuronal',
+      'are unul sau mai mulți axoni',
+      'primește excitația la nivelul dendritelor',
+      'are rol în formarea urinei',
     ]),
 
-    new test(
-      'Din categoria țesuturilor embrionare fac parte țesuturile',
-      2,
-      -1,
-      ['secretoare', 'apicale', 'conductoare', 'de apărare']
-    ),
+    new test('Urechea medie comunică cu:', 2, -1, [
+      'urechea internă, prin timpan',
+      'faringele, prin trompa lui Eustachio',
+      'urechea externă, prin fereastra rotundă',
+      'urechea externă, prin fereastra ovală',
+    ]),
 
-    new test('Neuroni senzitivi cu rol de receptori se găsesc în:', 2, -1, [
-      'mugurele gustativ',
-      'epiteliul olfactiv',
-      'coroida',
+    new test('Receptorii acustici la mamifere sunt localizați în:', 2, -1, [
+      'retină',
       'melcul membranos',
-    ]),
-
-    new test('Sunt talofite:', 1, -1, [
-      'briofitele',
-      'pterodofitele',
-      'gimnospermele',
-      'angiospermele',
-    ]),
-
-    new test('În procesul de fermentație lactică se oxidează', 1, -1, [
-      'glucoza',
-      'acidul lactic',
-      'alcoolul etilic',
-      'acidul acetic',
-    ]),
-
-    new test('Conțin enzime oxido-reducătoare', 4, -1, [
-      'centrozomii',
-      'vacuolele',
-      'ribozomii',
-      'mitocondriile',
-    ]),
-
-    new test('Orientarea frunzelor către lumină reprezintă:', 3, -1, [
-      'o fotonastie',
-      'o termonastie',
-      'un fototropism',
-      'un fototactism',
-    ]),
-
-    new test('Aparține artropodelor:', 1, -1, [
-      'racul',
-      'hidra',
-      'râma',
-      'meduza',
+      'utriculă',
+      'saculă',
     ]),
 
     new test(
-      'Regiunea de digestie chimică finală a alimentelor este reprezentată de:',
+      'Marcotajul este o formă de reproduce asexuată artificială practicată la:',
       2,
       -1,
-      ['cavitatea bucală', 'intestinul subțire', 'stomac', 'intestinul gros']
+      ['mușcată', 'vița de vie', 'stânjenel', 'cartof']
     ),
 
-    new test('Nucleoidul:', 3, -1, [
-      'este un organ cu rol în respirația celulei procariote',
-      'este alcătuit dintr-o moleculă de ARN circulară',
-      'reprezintă genomul bacterian',
-      'se află în interiorul nucleului la eucariote',
+    new test(
+      'Substanța cenușie organizată în coarne este prezentă la nivelul:',
+      3,
+      -1,
+      ['cerebelului', 'hipotalamusului', 'măduvei spinării', 'mezencefalul']
+    ),
+
+    new test('La nivelul intestinului subțire:', 4, -1, [
+      'aminoacizii sunt transformați în proteine',
+      'enzimele bilei degradează acizii grași și glicerina',
+      'se formează materiile fecale',
+      'alimentele sunt supuse acțiunii sucului pancreatic',
     ]),
 
-    new test('HCl din sucul gastric', 3, -1, [
-      'hidrolizează glucidele',
-      'coagulează/încheagă laptele',
-      'împiedică dezvoltarea germenilor',
-      'emulsionează lipazele',
+    new test(
+      'Componentă structurală a celulei vegetale, absentă la celula animală este:',
+      1,
+      -1,
+      ['peretele celular', 'mitocondria', 'nucleul', 'ribozomul']
+    ),
+
+    new test('Cromozomii sunt bicromatidici în:', 2, -1, [
+      'telofaza mitozei',
+      'profaza II',
+      'anafaza mitozei',
+      'telofaza II',
     ]),
 
-    new test('În procesul de fermentație alcoolică se oxidează:', 4, -1, [
-      'alcoolul etilic',
-      'aminoacizii',
-      'acidul acetic',
-      'glucoza',
+    new test('Respirația branhială se întâlnește la:', 1, -1, [
+      'păstrăv și larvele amfibienilor',
+      'balenă și limbric',
+      'vipere și gușter',
+      'broasca țestoasă de apă și insecte',
     ]),
 
-    new test('Măduva spinării prezintă:', 3, -1, [
-      'nuclei somatici la exterior',
-      'substanță albă la interior',
-      'fascicule de substanță albă la periferie',
-      'substanță cenușie la exterior',
+    new test('Sinteza proteică are loc la nivelul:', 4, -1, [
+      'dictiozomilor',
+      'lizozomilor',
+      'centrozomilor',
+      'ribozomilor',
+    ]),
+
+    new test('La nivelul urechii mamiferelor:', 1, -1, [
+      'conductul auditiv conduce sunetul la timpan',
+      'ciocanul se sprijină pe fereastra ovală',
+      'melcul este localizat în urechea medie',
+      'receptorii auditivi se află în utriculă și saculă',
+    ]),
+
+    new test('Celenteratele:', 2, -1, [
+      'trăiesc în mediul terestru',
+      'prezintă tentacule',
+      'au cap, picior și masă viscerală',
+      'includ păianjenul și racul',
+    ]),
+
+    new test('Sunt organite celulare autodivizibile:', 3, -1, [
+      'dictiozomii',
+      'lizozomii',
+      'mitocondriile',
+      'vacuolele',
     ]),
   ])
   const [shouldRender, setRender] = useState(false)
@@ -267,4 +267,4 @@ const Test2 = () => {
 
   return <div>{renderQuestions()}</div>
 }
-export default Test2
+export default Test6

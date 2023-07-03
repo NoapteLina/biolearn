@@ -50,7 +50,7 @@ let g_Intrebari: test[]
 let g_Answers: any[]
 let usedSet: number
 
-export const API_2 = {
+export const API_10 = {
   getQuestions: function () {
     return g_Intrebari
   },
@@ -62,113 +62,113 @@ export const API_2 = {
   },
 }
 
-const Test2 = () => {
+const Test10 = () => {
   const [usedTSet, setUsedSet] = useState(0)
   const [intrebari, setIntrebari] = useState([
-    new test('Celule fotosensibile conține:', 1, -1, [
-      'retina',
-      'sclerotica',
-      'coroida',
-      'pupila',
+    new test('Este suc digestiv:', 2, -1, [
+      'amilaza',
+      'bila',
+      'lactaza',
+      'pepsina',
     ]),
 
-    new test('Albinismul este o maladie:', 4, -1, [
-      'heterozomală',
-      'dominantă',
-      'genomică',
-      'autozomală',
+    new test('Hemofilia se caracterizează prin:', 1, -1, [
+      'deficiențe de coagulare a sângelui ',
+      'incapacitatea de a distinge culoarea roșie de culoarea verde',
+      'prezența în sânge a hematiilor în formă de seceră',
+      'prezența unui heterozom suplimentar',
     ]),
 
-    new test('Anafaza mitotică se caracterizează prin:', 2, -1, [
-      'formarea membranei nucleare',
-      'migrarea cromozomilor monocromatidici spre poli',
-      'dezorganizarea fusului de diviziune',
-      'individualizarea cromozomilor bicromatidici',
+    new test('Sângele este adus în atriul drept al inimii prin:', 3, -1, [
+      'artera aortă',
+      'artera pulmonară',
+      'venele cave',
+      'venele pulmonare',
     ]),
 
-    new test(
-      'Din categoria țesuturilor embrionare fac parte țesuturile',
-      2,
-      -1,
-      ['secretoare', 'apicale', 'conductoare', 'de apărare']
-    ),
-
-    new test('Neuroni senzitivi cu rol de receptori se găsesc în:', 2, -1, [
-      'mugurele gustativ',
-      'epiteliul olfactiv',
-      'coroida',
-      'melcul membranos',
+    new test('Plastidele sunt organite celulare întâlnite la:', 3, -1, [
+      'bacterii',
+      'bazidiomicete',
+      'monocotiledonate',
+      'urodele',
     ]),
 
-    new test('Sunt talofite:', 1, -1, [
-      'briofitele',
-      'pterodofitele',
-      'gimnospermele',
-      'angiospermele',
+    new test('Are corpul reprezentat de corm:', 3, -1, [
+      'bacilul fânului',
+      'cornul secarei',
+      'laricele (zada)',
+      'sbârciogul',
     ]),
 
-    new test('În procesul de fermentație lactică se oxidează', 1, -1, [
-      'glucoza',
-      'acidul lactic',
-      'alcoolul etilic',
-      'acidul acetic',
+    new test('Centrozomii se găsesc în: ', 3, -1, [
+      'centromer',
+      'lizozom',
+      'nucleu',
+      'ribozom',
     ]),
 
-    new test('Conțin enzime oxido-reducătoare', 4, -1, [
-      'centrozomii',
-      'vacuolele',
+    new test('Foveea centralis:', 4, -1, [
+      'asigură acomodarea pentru distanță',
+      'este o componentă a coroidei',
+      'face parte din sistemul optic',
+      'se găsește la nivelul petei galbene',
+    ]),
+
+    new test('Inima, la om, este un organ:', 2, -1, [
+      'respirator',
+      'muscular',
+      'pereche',
+      'tricameral',
+    ]),
+
+    new test('Stomacul produce:', 3, -1, [
+      'bilă',
+      'salivă',
+      'suc gastric',
+      'suc pancreatic',
+    ]),
+
+    new test('Sindromul Turner:', 1, -1, [
+      'reprezintă o monosomie',
+      'este o trisomie laterală',
+      'prezintă cariotipul 2n = 47 + XXX',
+      'se transmite de la mamă la băieți',
+    ]),
+
+    new test('Venele cave se deschid în:', 1, -1, [
+      'atriul drept',
+      'atriul stâng',
+      'ventriculul stâng',
+      'ventriculul drept',
+    ]),
+
+    new test('George Emil Palade a descoperit:', 3, -1, [
+      'cloroplastele',
+      'lizozomii',
       'ribozomii',
-      'mitocondriile',
+      'vacuolele',
     ]),
 
-    new test('Orientarea frunzelor către lumină reprezintă:', 3, -1, [
-      'o fotonastie',
-      'o termonastie',
-      'un fototropism',
-      'un fototactism',
-    ]),
-
-    new test('Aparține artropodelor:', 1, -1, [
-      'racul',
-      'hidra',
-      'râma',
-      'meduza',
+    new test('Are corpul reprezentat de corm:', 1, -1, [
+      'tisa',
+      'bacilul tetanosului',
+      'drojdia',
+      'lichenul de piatră',
     ]),
 
     new test(
-      'Regiunea de digestie chimică finală a alimentelor este reprezentată de:',
-      2,
+      'Știința care studiază clasificarea organismelor se numește:',
+      4,
       -1,
-      ['cavitatea bucală', 'intestinul subțire', 'stomac', 'intestinul gros']
+      ['citologie', 'evoluționism', 'histologie', 'sistematică']
     ),
 
-    new test('Nucleoidul:', 3, -1, [
-      'este un organ cu rol în respirația celulei procariote',
-      'este alcătuit dintr-o moleculă de ARN circulară',
-      'reprezintă genomul bacterian',
-      'se află în interiorul nucleului la eucariote',
-    ]),
-
-    new test('HCl din sucul gastric', 3, -1, [
-      'hidrolizează glucidele',
-      'coagulează/încheagă laptele',
-      'împiedică dezvoltarea germenilor',
-      'emulsionează lipazele',
-    ]),
-
-    new test('În procesul de fermentație alcoolică se oxidează:', 4, -1, [
-      'alcoolul etilic',
-      'aminoacizii',
-      'acidul acetic',
-      'glucoza',
-    ]),
-
-    new test('Măduva spinării prezintă:', 3, -1, [
-      'nuclei somatici la exterior',
-      'substanță albă la interior',
-      'fascicule de substanță albă la periferie',
-      'substanță cenușie la exterior',
-    ]),
+    new test(
+      'Țesutul alcătuit din neuroni și celule gliale (nevroglii) se numește:',
+      3,
+      -1,
+      ['cartilaginos', 'muscular', 'nervos', 'osos spongios']
+    ),
   ])
   const [shouldRender, setRender] = useState(false)
   const tempAns = new Array(intrebari.length).fill(0)
@@ -267,4 +267,4 @@ const Test2 = () => {
 
   return <div>{renderQuestions()}</div>
 }
-export default Test2
+export default Test10

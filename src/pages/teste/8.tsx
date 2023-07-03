@@ -50,7 +50,7 @@ let g_Intrebari: test[]
 let g_Answers: any[]
 let usedSet: number
 
-export const API_2 = {
+export const API_8 = {
   getQuestions: function () {
     return g_Intrebari
   },
@@ -62,112 +62,122 @@ export const API_2 = {
   },
 }
 
-const Test2 = () => {
+const Test8 = () => {
   const [usedTSet, setUsedSet] = useState(0)
   const [intrebari, setIntrebari] = useState([
-    new test('Celule fotosensibile conține:', 1, -1, [
-      'retina',
-      'sclerotica',
-      'coroida',
-      'pupila',
-    ]),
-
-    new test('Albinismul este o maladie:', 4, -1, [
-      'heterozomală',
-      'dominantă',
-      'genomică',
-      'autozomală',
-    ]),
-
-    new test('Anafaza mitotică se caracterizează prin:', 2, -1, [
-      'formarea membranei nucleare',
-      'migrarea cromozomilor monocromatidici spre poli',
-      'dezorganizarea fusului de diviziune',
-      'individualizarea cromozomilor bicromatidici',
+    new test('Grana este o structură caracteristică:', 1, -1, [
+      'cloroplastului',
+      'lizozomului',
+      'nucleului',
+      'mitocondriei',
     ]),
 
     new test(
-      'Din categoria țesuturilor embrionare fac parte țesuturile',
-      2,
+      'Fiecare celulă rezultată din mitoza unei celule mamă cu 2n = 46 de cromozomi, prezintă:',
+      3,
       -1,
-      ['secretoare', 'apicale', 'conductoare', 'de apărare']
+      [
+        '2n = 23 cromozomi ',
+        'n = 23 cromozomi',
+        '2n = 46 cromozomi',
+        'n = 46 cromozomi',
+      ]
     ),
 
-    new test('Neuroni senzitivi cu rol de receptori se găsesc în:', 2, -1, [
-      'mugurele gustativ',
-      'epiteliul olfactiv',
-      'coroida',
-      'melcul membranos',
+    new test('Reprezintă o afecțiune a sistemului respirator:', 2, -1, [
+      'ateroscleroza',
+      'bronșita',
+      'candidoza',
+      'gastrita',
     ]),
 
-    new test('Sunt talofite:', 1, -1, [
-      'briofitele',
-      'pterodofitele',
-      'gimnospermele',
-      'angiospermele',
-    ]),
-
-    new test('În procesul de fermentație lactică se oxidează', 1, -1, [
-      'glucoza',
-      'acidul lactic',
-      'alcoolul etilic',
-      'acidul acetic',
-    ]),
-
-    new test('Conțin enzime oxido-reducătoare', 4, -1, [
-      'centrozomii',
-      'vacuolele',
-      'ribozomii',
-      'mitocondriile',
-    ]),
-
-    new test('Orientarea frunzelor către lumină reprezintă:', 3, -1, [
-      'o fotonastie',
-      'o termonastie',
-      'un fototropism',
-      'un fototactism',
-    ]),
-
-    new test('Aparține artropodelor:', 1, -1, [
-      'racul',
-      'hidra',
-      'râma',
-      'meduza',
+    new test('Prin arterele pulmonare, sângele:', 2, -1, [
+      'ajunge în atriul drept',
+      'pleacă din ventriculul drept',
+      'ajunge în atriul stâng',
+      'pleacă din ventriculul stâng',
     ]),
 
     new test(
-      'Regiunea de digestie chimică finală a alimentelor este reprezentată de:',
-      2,
+      'La mamifere, o structură caracteristică urechii externe este:',
+      3,
       -1,
-      ['cavitatea bucală', 'intestinul subțire', 'stomac', 'intestinul gros']
+      [
+        'melcul membranos',
+        'lanțul de oscioare',
+        'conductul auditiv extern',
+        'trompa lui Eustachio',
+      ]
     ),
 
-    new test('Nucleoidul:', 3, -1, [
-      'este un organ cu rol în respirația celulei procariote',
-      'este alcătuit dintr-o moleculă de ARN circulară',
-      'reprezintă genomul bacterian',
-      'se află în interiorul nucleului la eucariote',
+    new test('Celulele gliale:', 3, -1, [
+      'sunt anucleate',
+      'generează impulsurile nervoase',
+      'sintetizează mielina',
+      'sunt hrănite de către neuroni',
     ]),
 
-    new test('HCl din sucul gastric', 3, -1, [
-      'hidrolizează glucidele',
-      'coagulează/încheagă laptele',
-      'împiedică dezvoltarea germenilor',
-      'emulsionează lipazele',
+    new test('Chemoreceptorii gustativi:', 1, -1, [
+      'conțin celule în formă de fus',
+      'prezintă un cil la polul bazal',
+      'se numesc papile gustative',
+      'sunt numeroși la nivelul stomacului',
     ]),
 
-    new test('În procesul de fermentație alcoolică se oxidează:', 4, -1, [
-      'alcoolul etilic',
-      'aminoacizii',
-      'acidul acetic',
-      'glucoza',
+    new test('Bacilul Koch poate produce:', 3, -1, [
+      'astm bronșic',
+      'sifilis',
+      'TBC',
+      'ulcer gastro-intestinal',
     ]),
 
-    new test('Măduva spinării prezintă:', 3, -1, [
-      'nuclei somatici la exterior',
-      'substanță albă la interior',
-      'fascicule de substanță albă la periferie',
-      'substanță cenușie la exterior',
+    new test('Un organism cu genotipul AABB:', 2, -1, [
+      'conține un singur set de cromozomi',
+      'este pur din punct de vedere genetic',
+      'are factori ereditari diferiți în fiecare pereche',
+      'produce patru tipuri diferite de gameți',
+    ]),
+
+    new test('Ficatul:', 1, -1, [
+      'este localizat sub diafragmă',
+      'se situează inferior față de intestinul gros',
+      'intră în alcătuirea tubului digestiv',
+      'participă la digestie prin secreția unui suc acid',
+    ]),
+
+    new test(
+      'Descendenții unei familii în care mama are grupa A (II) homozigotă, iar tatăl grupa 0 (I) pot avea:',
+      1,
+      -1,
+      ['grupa A (II)', 'grupa AB (IV)', 'grupa B (III)', 'grupa 0 (I)']
+    ),
+
+    new test('Paralizia unui membru se numește: ', 4, -1, [
+      'boala Parkinson',
+      'epilepsie',
+      'monohibridare',
+      'monoplegie',
+    ]),
+
+    new test('Tenia:', 2, -1, [
+      'aparține protistelor',
+      'este parazită la om',
+      'reprezintă un vierme cilindric',
+      'trăiește liber în mediul acvatic',
+    ]),
+
+    new test('Cuibărirea embrionului în mucoasa uterină se numește:', 3, -1, [
+      'fecundație',
+      'nastie',
+      'nidație',
+      'polenizare',
+    ]),
+
+    new test('Membrana celulară:', 1, -1, [
+      'delimitează citoplasma',
+      'este dispusă la periferia peretelui celular',
+      'lipsește la celula procariotă',
+      'conține celuloză',
     ]),
   ])
   const [shouldRender, setRender] = useState(false)
@@ -267,4 +277,4 @@ const Test2 = () => {
 
   return <div>{renderQuestions()}</div>
 }
-export default Test2
+export default Test8
