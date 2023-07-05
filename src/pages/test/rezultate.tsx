@@ -330,7 +330,12 @@ const Results = () => {
     return (
       <>
         {
-          <Card className="h-max max-h-[50vh] w-1/3 overflow-y-scroll border-lime-500 bg-gradient-to-tr from-lime-200 to-green-300">
+          <div className="display: block">
+          <div className="text-2xl font-bold text-center text-green-900">
+            Raspunsuri gresite
+          </div>
+          <Card className="h-max max-w-md max-h-[50vh] overflow-y-scroll border-lime-500 bg-gradient-to-tr from-lime-200 to-green-300">
+
             <ul>
               {newarr.map((index: any) => (
                 <>
@@ -361,6 +366,7 @@ const Results = () => {
               ))}
             </ul>
           </Card>
+          </div>
         }
       </>
     )
@@ -369,7 +375,11 @@ const Results = () => {
     return (
       <>
         {
-          <Card className="h-max max-h-[50vh] w-1/3 overflow-y-scroll border-lime-500 bg-gradient-to-tr from-lime-200 to-green-300 object-right">
+          <div className="display: block">
+            <div className="text-2xl font-bold text-center text-green-900">
+              Raspunsuri corecte
+            </div>
+          <Card className="h-max max-w-md max-h-[50vh] overflow-y-scroll border-lime-500 bg-gradient-to-tr from-lime-200 to-green-300 object-right">
             <ul>
               {corrArr.map((index: any) => (
                 <>
@@ -392,6 +402,7 @@ const Results = () => {
               ))}
             </ul>
           </Card>
+          </div>
         }
       </>
     )
@@ -414,7 +425,7 @@ const Results = () => {
     //correct in green and wrong in red
     return(
       <>
-        <Card className="h-max max-h-[50vh] w-1/5  border-lime-500 bg-gradient-to-tr from-lime-200 to-green-300 object-right">
+        <Card className="h-max max-w-md max-h-[50vh] mt-8  border-lime-500 bg-gradient-to-tr from-lime-200 to-green-300 object-right">
           <ul>
             <li className="text-green-500">
               {currWordC}
@@ -431,7 +442,7 @@ const Results = () => {
     return (
       <>
         <h1 className='text-center mt-20 text-4xl font-extrabold'>Rezultate</h1>
-        <div className="mx-72 space-x-12 flex mt-20 ml-[20rem]">
+        <div className=" mt-20 w-auto  ml-[50%] translate-x-[-50%] grid grid-cols-3 gap-4">
           {renderWrongCard()}
           {renderCorWroCounter()} 
           {renderCorrectCard()}

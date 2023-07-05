@@ -26,11 +26,12 @@ export default function Example(): JSX.Element {
               </span>
             </div>
           </div>
-          <div className="mt-32 flex justify-center text-center">
+          <div className="mt-32 text-center mx-[5%]">
             <Accordion open={open === 1}>
               <div className="w-full">
+
                 <AccordionHeader
-                  className=""
+                  className="w-auto ml-[50%] translate-x-[-50%]"
                   onClick={() => {
                     handleOpen(1)
                   }}
@@ -50,7 +51,7 @@ export default function Example(): JSX.Element {
             </Accordion>
             <Accordion open={open === 2}>
               <AccordionHeader
-                className="w-auto"
+                className="w-auto ml-[50%] translate-x-[-50%]"
                 onClick={() => {
                   handleOpen(2)
                 }}
@@ -67,7 +68,7 @@ export default function Example(): JSX.Element {
             </Accordion>
             <Accordion open={open === 3}>
               <AccordionHeader
-                className=" w-auto"
+                className=" w-auto ml-[50%] translate-x-[-50%]"
                 onClick={() => {
                   handleOpen(3)
                 }}
@@ -88,7 +89,7 @@ export default function Example(): JSX.Element {
             </Accordion>
             <Accordion open={open === 4}>
               <AccordionHeader
-                className=" w-auto"
+                className=" w-auto ml-[50%] translate-x-[-50%]"
                 onClick={() => {
                   handleOpen(4)
                 }}
