@@ -1,48 +1,34 @@
-import { use, useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
-} from '@heroicons/react/24/outline'
+/* eslint-disable @next/next/no-html-link-for-pages */
+import { AcademicCapIcon, BookOpenIcon, ClipboardDocumentListIcon, PhotoIcon } from '@heroicons/react/24/outline'
+
 
 import { Button } from 'flowbite-react'
 import { useRouter } from 'next/router'
-import Nav from '~/components/nav'
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Lecții',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-    icon: CloudArrowUpIcon,
+      'Lecțiile noastre sunt sintetizate în așa fel încat să fie pe înțelesul tuturor și să conțină toate informațiile necesare pentru a înțelege materia de biologie de la 0. ',
+    icon: BookOpenIcon,
   },
   {
-    name: 'SSL certificates',
+    name: 'Mobele bacalaureat',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-    icon: LockClosedIcon,
+      'Acestea sunt rezolvate, pentru a vedea cum trebuie lucrată o problemă și pentru a înțelege cum se aplică teoria în practică.',
+    icon: AcademicCapIcon ,
   },
   {
-    name: 'Simple queues',
+    name: 'Teste',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-    icon: ArrowPathIcon,
+      'Sunt concepute pentru a te ajuta să îți testezi cunoștințele și să vezi unde mai ai nevoie de îmbunătățiri.',
+    icon: ClipboardDocumentListIcon,
   },
   {
-    name: 'Advanced security',
+    name: 'Imagini',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+      'Lecțiile conțin imagini reprezentative pentru persoanele cu o memorie vizuală mai bună.',
+    icon: PhotoIcon,
   },
 ]
 const handleClickScroll = () => {
@@ -54,7 +40,6 @@ const handleClickScroll = () => {
   };
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const router = useRouter()
 
   return (
@@ -62,13 +47,13 @@ export default function Home() {
       <div className="relative px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl underline decoration-solid">
               Învață acum biologie
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Pregătește-te pentru examenul de bacalaureat la biologie cu
               ajutorul nostru.
-              <br /> Ai la dispoziție teste, exerciții și resurse educaționale.
+              <br /> Ai la dispoziție noțiunile teoretice necesare, teste pentru verificarea cunoștințelor și modele de bacalaureat rezolvate.
             </p>
             <div className="mt-6 flex items-center justify-center gap-x-6">
               <Button
@@ -85,16 +70,12 @@ export default function Home() {
           </div>
           <div id="features" className="mx-auto mt-[40rem] max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-indigo-600">
-              Deploy faster
+              Învață acum
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Everything you need to deploy your app
+              Tot ce ai nevoie pentru a obține nota maximă la examenul de bacalaureat 
             </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-              Suspendisse eget egestas a elementum pulvinar et feugiat blandit
-              at. In mi viverra elit nunc.
-            </p>
+            
           </div>
           <div className="mx-auto max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -117,7 +98,6 @@ export default function Home() {
             </dl>
           </div>
         </div>
-        
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(10%-20rem)]"
           aria-hidden="true"
@@ -164,7 +144,7 @@ export default function Home() {
               />
             </div>
             <div
-              className="absolute inset-x-0 top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+              className="absolute inset-x-0 mt-18 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
               aria-hidden="true"
             >
               <div
@@ -175,6 +155,10 @@ export default function Home() {
                 }}
               />
             </div>
+
+                        
+            
+
           </div>
         </div>
       </div>

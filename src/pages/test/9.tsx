@@ -5,6 +5,7 @@ import { Button, Card } from 'flowbite-react'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
+import { ArrowSmallRightIcon } from '@heroicons/react/24/outline'
 
 export class test {
   intrebare: string
@@ -192,7 +193,7 @@ const Test9 = () => {
   const router = useRouter()
   let currAns = -1
   const [counter, setCounter] = useState(0)
-  const [currWord, setWord] = useState('Next')
+  const [currWord, setWord] = useState('Următoarea întrebare')
   const activateButton = (id: number) => {
     currAns = id
     document.getElementById(id.toString())?.classList.add('outline')
@@ -210,26 +211,26 @@ const Test9 = () => {
     setCounter((count) => count + 1)
     document.getElementById(currAns.toString())?.classList.remove('outline')
     if (counter >= intrebari.length - 2) {
-      setWord('Finish')
+      setWord('Finalizează testul')
       console.log(usedSet)
     }
     if (counter == intrebari.length - 1) {
       setAnsarray(tempAns)
       setRender(false)
-      void router.push('/teste/rezultate')
+      void router.push('/test/rezultate')
     }
   }
   function renderQuestions() {
     if (shouldRender) {
       return (
         <>
-          <Card className="max-w-sm">
+          <Card className="max-w-sm mx-auto my-auto flex h-1/2 rounded-lg relative grid mt-28 border-lime-300 bg-transparent">
             <h5 className="text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {intrebari[counter]?.intrebare}
             </h5>
-            <Card>
+            <Card className="border-lime-300 bg-transparent">
               <Button
-                pill
+                
                 gradientDuoTone="tealToLime"
                 id="1"
                 onClick={() => activateButton(1)}
@@ -237,7 +238,7 @@ const Test9 = () => {
                 {intrebari[counter]?.raspunsuri[0]}
               </Button>
               <Button
-                pill
+                
                 gradientDuoTone="tealToLime"
                 id="2"
                 onClick={() => activateButton(2)}
@@ -245,7 +246,7 @@ const Test9 = () => {
                 {intrebari[counter]?.raspunsuri[1]}
               </Button>
               <Button
-                pill
+                
                 gradientDuoTone="tealToLime"
                 id="3"
                 onClick={() => activateButton(3)}
@@ -253,7 +254,7 @@ const Test9 = () => {
                 {intrebari[counter]?.raspunsuri[2]}
               </Button>
               <Button
-                pill
+                
                 gradientDuoTone="tealToLime"
                 id="4"
                 onClick={() => activateButton(4)}
@@ -261,8 +262,8 @@ const Test9 = () => {
                 {intrebari[counter]?.raspunsuri[3]}
               </Button>
             </Card>
-            <Button pill gradientDuoTone="greenToBlue" onClick={() => submit()}>
-              {currWord}
+            <Button className="mx-auto w-32" gradientDuoTone="tealToLime" onClick={() => submit()}>
+              {currWord} {''}<ArrowSmallRightIcon className=" ml-2 w-4"/>
             </Button>
           </Card>
         </>
@@ -270,6 +271,29 @@ const Test9 = () => {
     } else return <div></div>
   }
 
-  return <div>{renderQuestions()}</div>
+  return (
+  <div> 
+    {renderQuestions()} 
+    <div
+        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+    >
+        <div
+            className="relative left-[calc(50%-20rem)] aspect-[16/9] w-[27.125rem] -translate-x-1 rotate-[30deg] bg-gradient-to-tr from-yellow-500 to-green-500 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style={{
+                clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
+            }} />
+        </div><div
+            className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+            aria-hidden="true"
+        >
+            <div
+                className="relative right-[calc(0%+11rem)] aspect-[16/9] w-[36.125rem] -translate-x-1/2  rotate-[30deg] bg-gradient-to-tr from-lime-600 to-green-900 opacity-30 sm:left-[calc(50%+15rem)] sm:w-[72.1875rem]"
+                style={{
+                    clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
+                }} />
+        </div>
+  </div>
+  )
 }
 export default Test9

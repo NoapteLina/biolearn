@@ -1,5 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
  import React from "react"
+ import Image from 'next/image'
  import { useRouter } from "next/router";
  export default function Vegetale() {
     const router = useRouter();
@@ -33,6 +34,16 @@
                      clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
                  }} />
          </div>
+         <div
+        className="absolute inset-x-0 mt-[80rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+    >
+        <div
+            className="relative left-[calc(50%-20rem)] aspect-[1200/1100] w-[27.125rem] -translate-x-1 rotate-[75deg] bg-gradient-to-tr from-lime-300 to-green-400 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style={{
+                clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 12.1%, 80.7% 52%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
+            }} />
+        </div>
  
          <div className=" py-24 sm:py-12">
              <div className="mx-auto max-w-7xl px-6 lg:px-2">
@@ -40,7 +51,7 @@
                      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Țesuturi vegetale</h2>
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
   
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Țesuturi embrionare (meristematice)</span> <br/>
                         - celulele se divid continuu <br/>
                         - celulele sunt mici, cu pereți subțiri, fără spații între ele <br/>          
@@ -54,11 +65,14 @@
                         - combiul subero-felodermic (felogenul) <br/>
                         - combiul vascular (libero-lemnos) <br/>
                         - asigură îngroșarea secundară a rădăcinii și tulpinii <br/>
-                    </p>
+                        <div className="flex justify-end -mt-64">
+                            <Image src="/images2/embrionare.jpg" width={400} height={300} alt="tesuturi" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 
-                    <p className="mt-0 text-lg text-grey-600">
+                    <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Țesuturi definitive</span> <br/>
                         - provin din celulele țesutului embrionar <br/>
                         - celulele nu se divid <br/>
@@ -68,7 +82,10 @@
                         3. Conducătoare <br/>
                         4. Secretoare <br/>
                         5. Mecanice <br/>
-                    </p>
+                        <div className="flex justify-end -mt-64">
+                            <Image src="/images2/definitive.png" width={400} height={300} alt="tesuturi" className="rounded-lg"/>
+                        </div>
+                    </div>
 
                     <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
 

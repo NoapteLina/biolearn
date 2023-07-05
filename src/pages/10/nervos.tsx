@@ -1,5 +1,6 @@
  /* eslint-disable @next/next/no-img-element */
  import React from "react"
+ import Image from 'next/image'
  import { useRouter } from "next/router";
  export default function Nervos() {
     const router = useRouter();
@@ -40,7 +41,7 @@
                      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Sistemul nervos</h2>
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Definiție: </span> Sistemul nervos este un sistem de coordonare și integrare a activității organismului. <br/>
                         <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Tipuri de sisteme nervoase: </span> <br/>
                         Somatic - asigură integrarea organismului în mediul de viață <br/>
@@ -48,7 +49,11 @@
                         Central - reprezentat de encefal și măduva spinării <br/>   
                         Periferic - reprezentat de nervi și ganglioni nervoși <br/>
                         - La baza funcționării sistemului nervos stă arcul reflex, care constă în răspunsul organismului la acțiunea unor stimuli din mediul extern sau intern. <br/>
-                     </p>
+                        <br/>
+                        <div className="flex justify-center">
+                            <Image src="/images2/nervos.jpg" width={500} height={300} alt="sistemul-nervos" className="rounded-lg"/>
+                        </div>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
                     

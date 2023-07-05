@@ -1,6 +1,7 @@
  /* eslint-disable @next/next/no-img-element */
  import React from "react"
  import { useRouter } from "next/router";
+ import Image from 'next/image'
  export default function Plante() {
     const router = useRouter();
      return(
@@ -40,17 +41,21 @@
                      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center text-emerald-900">Excreția la plante</h2>
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600 text-center">
+                     <div className="mt-0 text-lg text-grey-600 text-center">
                          <span className="underline decoration-wavy text-[#65a30d] font-extrabold">Definiție: </span>Excreția la plante este procesul prin care plantele elimină deșeurile și substanțele nedorite din corpul lor. Plantele au organe specifice de excreție, așa cum au animalele, dar au mecanisme diferite de eliminare a substanțelor. <br/>
-                     </p>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
-                     <p className="mt-0 text-lg text-grey-600">
+                     <div className="mt-0 text-lg text-grey-600">
                          Eliminarea apei la plante se realizează prin două procese: <br/>
                          <span className="underline decoration-wavy text-green-700">Transpirația</span> - sub formă de vapori  <br/>
                          <span className="underline decoration-wavy text-green-700">Gutația</span> - sub formă de picături de apă  <br/>
-                     </p>
+                         <div className="flex justify-center ml-[39%] -mt-24">
+                            <Image src="/images2/transpiratia.jpg" width={400} height={300} alt="transpiratia" className="rounded-lg"/>
+                            <Image src="/images2/gutatia.jpg" width={400} height={300} alt="gutatia" className="rounded-lg"/>
+                        </div>
+                     </div>
  
                      <div className="mx-auto mt-10 max-w-2x1 gap-x-8 gap-y-6 border-t border-green-900 pt-10 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none"></div>
  
