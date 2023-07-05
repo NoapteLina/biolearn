@@ -1,33 +1,25 @@
 # BioLearn
 
-BioLearn este o aplicatie Web cu scopul de a ...
-.....
+BioLearn este un proiect realizat cu scopul de a ajuta elevii care aleg să dea proba de bacalaureat la biologie, utilizând lecții redactate pe înțelesul oricui, dar și sintetizate astfel încât să nu privim la niște paragrafe de text simple, teste pentru a ne putea verifica cunoștințele pe care le avem și pentru a le îmbunătăți și modele de bacalaureat rezolvate, astfel încât să putem vedea cum se rezolvă corect subiectele.
 ## Cu ce a fost dezvoltata?
-...
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
-
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
-
+BioLearn este realizat în TypeScript și React pentru interfață Flowbite, Flowbite React, Material Tailwind, Tailwind UI și Tailwind CSS și HeroIcons pentru design.
 - [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
 - [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
 
 ## Utilizare
-...
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
+Pentru lectii apasati butonul "Lectii" din bara de navigatie si selectati clasa. Apoi puteti alege orice lectie doriti sa studiati. 
+Pentru teste apasati butonul "Teste" din bara de navigatie si selectati testul dorit. Testul va incepe si va vor fi prezentate 4 posibile raspunsuri la fiecare intrebare, dintre care doar unul va fi corect. La finalizarea testului veti vedea rezultatele in detaliu cu fiecare greseala si cu raspunsurile corecte.
+Pentru modele de Bacalaureat apasati butonul "Modele Bacalaureat" din bara de navigatie si selectati modelul dorit.
 ## Instalare si rulare locala
-....
+Rulati comenzile pentru descarcare si instalarea pachetelor necesare:
 ```
-aasdfasdf
+git clone https://www.github.com/biolearn2023/biolearn
+cd biolearn
+npm install
 ```
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
-
+Pentru rulare:
+```
+npm run dev
+```
+Site-ul este acum disponibil pe localhost:3000 si online pe biolearn2023.github.io
 ## Bibliografie / Librarii utilizate
