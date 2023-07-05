@@ -59,7 +59,7 @@ export default function Home() {
               <Button
                 gradientDuoTone="greenToBlue"
                 pill
-                onClick={() => void router.push('/alege-cuprins')}
+                href='https://github.com/BioLearn2023/BioLearn'
               >
                 <p>Începe acum</p>
               </Button>
@@ -69,7 +69,7 @@ export default function Home() {
             </div>
           </div>
           <div id="features" className="mx-auto mt-[40rem] max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-indigo-600">
+            <h2 className="text-base font-semibold leading-7 text-green-600">
               Învață acum
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -82,7 +82,7 @@ export default function Home() {
               {features.map((feature) => (
                 <div key={feature.name} className="relative pl-16">
                   <dt className="text-base font-semibold leading-7 text-gray-900">
-                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-lime-600">
                       <feature.icon
                         className="h-6 w-6 text-white"
                         aria-hidden="true"

@@ -202,6 +202,7 @@ const Test1 = () => {
     if (currAns === intrebari[counter]?.raspuns) {
       tempAns[counter] = 1
     }
+    if(currAns == -1) alert("Nu ai selectat niciun raspuns!")
     setUsedSet(1)
     setCounter((count) => count + 1)
     document.getElementById(currAns.toString())?.classList.remove('outline')

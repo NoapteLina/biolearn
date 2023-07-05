@@ -13,7 +13,10 @@ export default function Footer(){
                         <a href="/despre" className="mr-4 hover:underline md:mr-6 ">Despre</a>
                     </li>
                     <li>
-                        <a href="#" className="mr-4 hover:underline md:mr-6">GitHub</a>
+                        <a href="/bibliografie" className="mr-4 hover:underline md:mr-6">Bibliografie</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/BioLearn2023/BioLearn" className="mr-4 hover:underline md:mr-6">GitHub</a>
                     </li>
                 </ul>
                 </div>
